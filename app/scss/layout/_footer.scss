@@ -1,0 +1,138 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
+
+footer {
+  background-color: #1ea78d;
+  .container {
+    padding-bottom: 30px;
+  }
+  h2.brand {
+    font-family: "Pacifico", serif;
+    color: white;
+  }
+  h6 {
+    color: white;
+    &.description {
+      margin-top: 40px;
+      font-family: "Open Sans Light", serif;
+    }
+    &.description1 {
+      margin-top: 80px;
+      font-family: "Open Sans Light", serif;
+      @media (max-width: 990px){
+        margin-top: 40px;
+      }
+    }
+    &.sub{
+      margin-top: 50px;
+      font-family: "Open Sans Light", serif;
+      span{
+        padding-left: 5px;
+        padding-right: 5px;
+        color: darken($color-footer,20%);
+      }
+    }
+    &.brand {
+      margin-top: 50px;
+      font-family: "Open Sans SemiBold", serif;
+      color: darken($color-footer, 23%);
+      span{
+        padding-right: 5px;
+      }
+    }
+  }
+  h5 {
+    &.sub {
+      margin-top:15px;
+      font-family: "Open Sans SemiBold", serif;
+      color: white;
+    }
+  }
+  .form{
+    padding: 0;
+    margin-top: 30px;
+    position:relative;
+  }
+  .input{
+    width: 100%;
+    padding: 15px;
+    background: #1ea78d;
+    border:1px solid white;
+    border-right: #1ea78d;
+    margin-bottom:25px;
+    color: white !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .input:hover{
+    border:1px solid white;
+  }
+
+  .input:focus{
+    color: white;
+    outline: none;
+    border: 1px solid white;
+  }
+  .form-btn{
+    color: #51bba7;
+    background: #1ea78d;
+    border:1px solid white;
+    border-left: 0;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background: $color-feature;
+    color: white;
+    border:1px solid white;
+    border-left: 0;
+    span{
+      color: white;
+    }
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+  ul.explore{
+    li{
+      background-color: $color-footer;
+      color: white;
+      font-family: "Open Sans Light", serif;
+      border: none;
+      a{
+        display: block;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        text-decoration: none;
+        transition: background .5s ease .300ms;
+        @media only screen and (min-width: 980px) {
+          font-size: 12px;
+        }
+        @media only screen and (max-width: 980px) {
+          font-size: 11px;
+        }
+        &:hover{
+          color: $color-primary;
+        }
+      }
+    }
+  }
+  .responsive-margin{
+    @media only screen and (max-width: 980px) {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}

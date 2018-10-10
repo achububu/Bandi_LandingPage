@@ -1,0 +1,646 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
+.inline-slide {
+  position: relative;
+  padding: 0;
+  background-color: #f4f7f9;
+  color: $color-feature;
+
+  .slick-container {
+    .slick-item {
+      position: relative;
+    }
+    ul.slick-dots {
+      position: relative;
+      left: 51%;
+      margin-top: 5%;
+      margin-bottom: 2%;
+      @media only screen and (max-width: 991px) {
+          position: relative;
+          left: 51%;
+          margin-top: 0;
+      }
+      li {
+        display: inline-block;
+        button:before {
+          content: '';
+          display: block;
+          width: 12px;
+          height: 12px;
+          border-radius: 9px;
+          background-color: transparent;
+          border: 1px solid #062033;
+          opacity: 0.5;
+        }
+        &.slick-active button:before {
+          background-color: #062033;
+          opacity: 1;
+        }
+      }
+    }
+
+
+    @media only screen and (max-width: 991px) {
+      .responsive-margin {
+        margin-bottom: 10%;
+      }
+      ul.slick-dots {
+        position: relative;
+        left: 51%;
+        margin-top: 0;
+      }
+    }
+  }
+}
+#feature{
+  padding-bottom: 20px;
+}
+
+
+#works {
+  position: relative;
+  padding: 0;
+  background-color: white;
+  color: $color-feature;
+  list-style-type: none;
+  margin: 0;
+  min-height: 300px;
+  width: 100%;
+  display: block !important;
+  overflow: hidden;
+  .btn{
+    font-family:  "Open Sans";
+    font-weight: 700;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    padding: 5px auto;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    &:hover{
+      background-color: $color-feature;
+      color: white;
+    }
+    &:active{
+      color: white;
+      background-color: $color-feature;
+    }
+    :focus{
+      color: white;
+      background-color: $color-feature;
+    }
+  }
+  .btn-default{
+    &:focus{
+      color: white;
+      background-color: $color-feature;
+    }
+  }
+}
+#team{
+  padding-bottom: 90px;
+  text-center{
+    margin-top: 10px;
+  }
+}
+
+h1 {
+  &.header {
+    color: $color-feature;
+    font-family: "Open Sans ExtraBold", serif;
+    font-size: 28pt;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &.content {
+      color: $color-primary;
+      font-size: 20pt;
+      font-family: "Open Sans SemiBold", serif;
+      text-align: left;
+      @media (max-width: 991px) {
+        text-align: center;
+      }
+  }
+  &.content-name{
+    color: $color-primary;
+    font-size: 16pt;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: "Open Sans SemiBold", serif;
+  }
+}
+
+h4.background {
+  position: relative;
+  z-index: 1;
+  font: 20pt 'Open Sans SemiBold';
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.5;
+  color: #c3c6c7;
+  #fun &{
+    color: white;
+  }
+
+  &:before {
+    border-top: 2px solid #dce1e5;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+  }
+
+  span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: #f4f7f9;
+    padding: 0 15px;
+    #feature & {
+      background: #f4f7f9;
+    }
+    #works & , #contact & {
+      background: white;
+    }
+    #fun &{
+      background-color: rgba(6,32,51,0.9);
+    }
+  }
+}
+
+
+
+p{
+  &.content{
+    color: $color-primary;
+    opacity: 0.75;
+    font-size: 12pt;
+    font-family: "Open Sans SemiBold", serif;
+    text-align: left;
+    @media only screen and (min-width: 1280px) {
+      font-size: 15pt;
+      }
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+    #works & , #team  &, #contact & {
+      text-align: center;
+    }
+    &.name{
+      color: $color-primary;
+      font-size: 11pt;
+      font-family: "Open Sans", serif;
+    }
+  }
+}
+
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0.9;
+  overflow: hidden;
+  transition: .5s ease;
+  background-color: $color-overlay;
+}
+#works .overlay .overlay-text {
+  color: white;
+  opacity: 1;
+  font: 20pt "Open Sans";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: inherit;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  h3 {
+    font-weight: 700;
+    margin-top: 10pt;
+    @media only screen and (max-width: 767px) {
+      font-size: 18pt;
+    }
+    @media only screen and (max-width: 500px) {
+      font-size: 12pt;
+    }
+  }
+  h5 {
+    margin-top: 10px;
+    @media only screen and (min-width: 1366px) {
+      font-size: 15pt;
+    }
+  }
+  span {
+    font-size: 13pt;
+    @media only screen and (max-width: 767px) {
+      font-size: 10pt;
+    }
+  }
+}
+#team .overlay .overlay-text{
+  height: inherit;
+  color: white;
+  opacity: 1;
+  font: 20pt "Open Sans";
+  width: inherit;
+  text-align: center;
+  h4{
+    margin-top:25px ;
+  }
+  h5{
+    padding: 25px 0;
+  }
+  //div.social{
+  //  @include center-test(95%);
+  //  font: 13pt "Open Sans";
+  //  a {
+  //    background-color: #black;
+  //    &:link {
+  //      color: #FFFFFF;
+  //    }
+  //    &:visited {
+  //      color: white;
+  //    }
+  //  }
+  //  margin-top: 30pt;
+  //
+  //  @media only screen and (max-width: 767px) {
+  //    font-size: 18pt;
+  //  }
+  //  @media only screen and (max-width: 414px) {
+  //    font-size: 10pt;
+  //    margin-top: 17pt;
+  //  }
+  //  @media only screen and (max-width: 375px) {
+  //    font-size: 10pt;
+  //    margin-top: 18pt;
+  //  }
+  //  @media only screen and (max-width: 320px) {
+  //    font-size: 10pt;
+  //    margin-top: 10pt;
+  //  }
+  //}
+  .social{
+    @include center-test(85%);
+    font-size:calc(10px + 0.9vw);
+    font-family: "Open Sans Light", serif;
+    list-style-type: none;
+    width: 90%;
+    li{
+      display: inline;
+
+      a {
+        outline:0;
+        padding:0;
+        margin:0;
+        &:link {
+          color: rgba(255,255,255,1);
+        }
+        &:visited {
+          color: rgba(255,255,255,1);
+        }
+        &:hover{
+          color: rgba(255,255,255,1);
+          background-color: unset;
+        }
+        &:focus{
+          color: rgba(250,250,250,1);
+          background-color: unset;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.img-hover:hover{
+  .overlay {
+    height: 100%;
+  }
+  #team & {
+    .text-center .content-name {
+      color: $color-overlay;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .responsive-margin {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .row.responsive-margin{
+    margin-top: 0;
+  }
+}
+
+.row {
+  position: relative;
+  margin-top: 25px;
+  &.title{
+    margin-top: 90px;
+  }
+  &.heart{
+    margin-top: 10px;
+  }
+  &.content {
+    margin-top: 60px;
+    #team & {
+      margin-top: 100px;
+    }
+    #contact &{
+      margin-top: 80px;
+    }
+    #works &{
+      margin-top: 40px
+    }
+  }
+  .container-fluid & {
+    margin-top: 30px;
+  }
+  &.footer{
+    margin-top: 100px;
+  }
+}
+#contact{
+  h4.location{
+    font-family: "Open Sans" , serif;
+    color: $color-primary
+  }
+  h3.location{
+    font-family: "Open Sans" , serif;
+    color: $color-primary
+  }
+  h6.location{
+    margin-top: 40px;
+    font-family: "Open Sans" , serif;
+    color: rgba(6,32,51,0.65);
+  }
+  #contact{
+    padding:10px 0 10px;
+  }
+  .contact-form{
+    margin-top: 20px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+  /* Input Styles */
+  form{
+    .form-name{
+      @media only screen and (min-width: 995px) {
+        padding-left:0;
+      }
+    }
+    .form-email{
+      @media only screen and (min-width: 995px) {
+        padding-right:0;
+      }
+    }
+    .form-mess{
+      @media only screen and (min-width: 995px) {
+        padding:0;
+      }
+    }
+  }
+
+
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:white;
+    border:none;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border-bottom:1px solid #8BC3A3;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border-bottom:1px solid #8BC3A3;
+  }
+
+  /* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color: $color-primary;
+    background:white;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;;
+    span{
+      padding-right: 15px;
+      color: $color-feature;
+    }
+    @media only screen and (min-width: 980px) {
+      float: right;
+    }
+    margin: auto;
+  }
+
+  .form-btn:hover{
+    background: $color-feature;
+    color: white;
+    border:none;
+    span{
+      color: white;
+    }
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+  center{
+    margin-top:330px;
+  }
+  input {
+    position: relative;
+    z-index: 10;
+  }
+  .responsive-margin{
+    @media only screen and (max-width: 980px) {
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+  ul.social{
+    list-style-type: none;
+    li{
+      @media only screen and (max-width: 980px) {
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+      }
+    }
+  }
+
+  .social li a {
+    display: block;
+    color: #cdd2d6;
+    font-size: 16pt;
+    -webkit-font-smoothing: antialiased;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: background .5s ease .300ms;
+    span {
+      width: 100px;
+      float: left;
+      text-align: center;
+      background: $color-feature;
+      color: #fff;
+      margin: -25px 74px;
+      padding: 8px;
+      transform-origin: 0;
+      visibility: hidden;
+      opacity: 0;
+      transform: rotateY(45deg);
+      border-radius: 5px;
+      transition: all .5s ease .300ms
+    }
+
+  }
+  @media only screen and (min-width: 1441px) {
+    .social li a:hover span {
+      visibility: visible;
+      opacity: 1;
+      transform: rotateY(0)
+    }
+  }
+  .social li span:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -20px;
+    top: 7px;
+    border: 10px solid transparent;
+    border-right: 10px solid $color-feature;
+  }
+  .social li a:hover { color: $color-feature }
+  .social li:first-child a { border-radius: 0 5px 0 0 }
+  .social li:last-child  a { border-radius: 0 0 5px 0 }
+}
+#fun{
+  background: url('../img/funfact_bg.png')no-repeat bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  
+  .responsive-margin{
+    @media only screen and (max-width: 980px) {
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+  .bgrfun{
+    background-color: rgba(6,32,51,0.8);
+    padding-bottom: 160px;
+  }
+  .text-center{
+    color: rgba(255,255,255,0.8);
+    h1{
+      margin-top: 30px;
+      font-family: "Open Sans SemiBold";
+      @media (min-width: 1300px ){
+        font-size: 60pt;
+      }
+    }
+    h4{
+      margin-top: 5px;
+      font-family: "Open Sans";
+      text-transform: uppercase;
+    }
+  }
+}
+.no-border{
+  border: 0;
+}
+.no-padding{
+  padding: 0 !important;
+}
+.no-paddingleft{
+  padding-left: 0 !important;
+}
+
+.no-margin{
+  margin: 0 !important;
+}
+.no-margintop{
+  margin-top: 0 !important;
+}
+.img-responsive{
+  width: 100%;
+}
+
+.btn-test{
+  background-color: $color-feature;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
