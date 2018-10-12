@@ -5731,6 +5731,8 @@ nav {
   padding-bottom: 90px; }
   #team text-center {
     margin-top: 10px; }
+  #team .fa-stack-1x {
+    background: rgba(0, 0, 0, 0.5); }
 
 h1.header {
   color: #0eb493;
@@ -5770,7 +5772,8 @@ h4.background {
   opacity: 0.5;
   color: #c3c6c7; }
   #fun h4.background {
-    color: white; }
+    color: white;
+    opacity: 1; }
   h4.background:before {
     border-top: 2px solid #dce1e5;
     content: "";
@@ -5946,7 +5949,7 @@ p.content {
   #contact .container-fluid {
     margin-top: 80px;
     padding: 0; }
-  #contact .bvcv:hover .envelope {
+  #contact .bvcv:hover .envelope::after {
     content: url("../../img/icon/Envelope_active.png"); }
   #contact h4.location {
     font-family: "Open Sans" , serif;

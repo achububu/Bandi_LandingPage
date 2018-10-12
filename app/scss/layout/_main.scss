@@ -115,6 +115,9 @@
   text-center{
     margin-top: 10px;
   }
+  .fa-stack-1x{
+    background: rgba(0,0,0,0.5);
+  }
 }
 
 h1 {
@@ -159,6 +162,7 @@ h4.background {
   color: #c3c6c7;
   #fun &{
     color: white;
+    opacity: 1;
   }
 
   &:before {
@@ -378,7 +382,7 @@ p{
     padding:0;
       }
 
-  .bvcv:hover .envelope{
+  .bvcv:hover .envelope::after{
     content: url('../../img/icon/Envelope_active.png');
   }
   h4.location{
