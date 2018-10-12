@@ -5946,6 +5946,8 @@ p.content {
   #contact .container-fluid {
     margin-top: 80px;
     padding: 0; }
+  #contact .bvcv:hover .envelope {
+    content: url("../../img/icon/Envelope_active.png"); }
   #contact h4.location {
     font-family: "Open Sans" , serif;
     color: #062033; }
@@ -6148,8 +6150,8 @@ p.content {
   background-color: #0eb493;
   color: white; }
 
-.bvcv:hover .envelope {
-  content: url("../../img/icon/Envelope_active.png"); }
+.fa-heart-o {
+  font-weight: bold; }
 
 /* -------------------------------------------------------------
   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
