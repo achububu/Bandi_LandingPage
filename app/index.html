@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>
@@ -14,7 +14,7 @@
     <title>CC Profile</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?cssfamily=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Pacifico" rel="stylesheet">
     <link href="css/vendor/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/vendor/bootstrap.css">
@@ -97,8 +97,7 @@
                         <div class="col-md-4 responsive-margin">
                             <div class="col-md-2">
                                 <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa fa-clock-o fa-stack-1x"></i>
+                                  <i class="fa fa-clock-o fa-stack-1x icon-test"></i>
                                 </span>
                             </div>
                             <div class="col-md-10 ">
@@ -110,8 +109,7 @@
                         <div class="col-md-4 responsive-margin">
                             <div class="col-md-2">
                                 <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa fa-pencil fa-stack-1x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x icon-test"></i>
                                 </span>
                             </div>
                             <div class="col-md-10">
@@ -123,8 +121,7 @@
                         <div class="col-md-4 responsive-margin">
                         <div class="col-md-2">
                                 <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa  fa-bullhorn fa-rotate-45 fa-stack-1x"></i>
+                                  <i class="fa  fa-bullhorn fa-rotate-45 fa-stack-1x icon-test"></i>
                                 </span>
                         </div>
                         <div class="col-md-10">
@@ -453,8 +450,8 @@
                 </div>
             </div>
             <div class="row heart">
-                <div class="col-md-4 col-md-offset-4  text-center" >
-                    <img src="img/icon/heart.png" alt="heart">
+                <div class="col-md-4 col-md-offset-4" style="">
+                    <h4 class="background"><span class="fa fa-heart-o" aria-hidden="true"></span></h4>
                 </div>
             </div>
             <div class="row">
@@ -503,10 +500,12 @@
         <div class="row content">
             <div class="col-md-3 responsive-margin no-paddingleft">
                 <h4 class="location">Cras at ultrices erat, sed vulputate</h4>
-                <h6 class="location"> 2345 Setwant natrer, 123</h6>
+                <div class="col-md-offset-0 col-md-8  col-sm-offset-3 col-sm-6  col-xs-offset-3 col-xs-6 no-paddingleft">
+                    <h6 class="location"> 2345 Setwant natrer, 123, Washington, Uninted States, (041) 1234 567, hello@brandi.com www.brandi.com</h6>
+                </div>
             </div>
-            <div class="col-md-8 responsive-margin no-padding">
-                <h3 class="location"><strong>Say hello</strong></h3>
+            <div class="col-md-8 col-sm-12 col-xs-12 responsive-margin no-padding">
+                <h3 class="location"><strong>Say hello!</strong></h3>
                 <div class="contact-form">
                     <!-- Form -->
                     <form id="contact-us" method="post" action="#">
@@ -521,13 +520,15 @@
                         </div>
                             <!-- Subject -->
                         <div class="col-md-12 form-mess">
-                            <input type="text" name="message" id="message" required="required" class="form" placeholder="message" />
+                            <input type="text" name="message" id="message" required="required" class="form" placeholder="Message" />
                         </div><!-- End Left Inputs -->
                         <!-- Right Inputs -->
                         <!-- Bottom Submit -->
                         <div class="col-md-12">
                             <!-- Send Button -->
-                            <button type="submit" id="submit" name="submit" class="form-btn"><img src="img/icon/Envelope.png" alt="" style="padding-right:10px;">Send Message</button>
+                            <button id="submit" name="submit" class="form-btn bvcv">
+                                <img  class="envelope" src="img/icon/Envelope.png" alt="" style="padding-right:10px;">Send Message
+                            </button>
                         </div><!-- End Bottom Submit -->
                         <!-- Clear -->
                         <div class="clear"></div>
@@ -535,7 +536,7 @@
                     <!-- Your Mail Message -->
                 </div><!-- End Contact Form Area -->
             </div>
-            <div class="col-md-1 col-sm-12 responsive-margin">
+            <div class="col-md-1 col-sm-12 col-xs-12 responsive-margin">
                 <ul class='social'>
                     <li>
                         <a class="fa fa-behance" aria-hidden="true" href="#">
@@ -569,7 +570,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="margin-top: 30px;">
+    <div class="container-fluid" >
         <img src="img/Map.png" alt="map" class="img-responsive">
     </div>
 </section>
@@ -622,7 +623,7 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="js/vendor/jquery-1.12.4.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/slick.min.js"></script>
 <script src="js/main.js"></script>

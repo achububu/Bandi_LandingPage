@@ -43,7 +43,7 @@
 
     @media only screen and (max-width: 991px) {
       .responsive-margin {
-        margin-bottom: 10%;
+        margin-bottom: 30px;
       }
       ul.slick-dots {
         position: relative;
@@ -55,6 +55,17 @@
 }
 #feature{
   padding-bottom: 20px;
+  .fa-stack{
+    border: 1px solid $color-feature;
+    border-radius: 50%;
+    box-sizing: content-box;
+  }
+  .icon-test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
 }
 
 
@@ -109,16 +120,19 @@
 h1 {
   &.header {
     color: $color-feature;
-    font-family: "Open Sans ExtraBold", serif;
+    font-family: "Open Sans", serif;
     font-size: 28pt;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-weight: 800;
   }
   &.content {
       color: $color-primary;
       font-size: 20pt;
-      font-family: "Open Sans SemiBold", serif;
+      font-family: "Open Sans", serif;
       text-align: left;
+      font-weight: 600;
       @media (max-width: 991px) {
         text-align: center;
       }
@@ -128,16 +142,18 @@ h1 {
     font-size: 16pt;
     padding-top: 20px;
     padding-bottom: 10px;
-    font-family: "Open Sans SemiBold", serif;
+    font-weight: 600;
+    font-family: "Open Sans", serif;
   }
 }
 
 h4.background {
   position: relative;
   z-index: 1;
-  font: 20pt 'Open Sans SemiBold';
+  font: 20pt 'Open Sans';
   margin-top: 0;
   text-align: center;
+  font-weight: 600;
   text-transform: uppercase;
   opacity: 0.5;
   color: #c3c6c7;
@@ -148,10 +164,22 @@ h4.background {
   &:before {
     border-top: 2px solid #dce1e5;
     content:"";
-    margin: 0 auto; /* this centers the line to the full width specified */
+    //margin: 0 auto; /* this centers the line to the full width specified */
     position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
-    top: 50%; left: 0; right: 0; bottom: 0;
-    width: 95%;
+    top: 50%;
+    left: 0;
+    width: 45%;
+    z-index: -1;
+  }
+
+  &:after {
+    border-top: 2px solid #dce1e5;
+    content:"";
+    //margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%;
+    right: 0;
+    width: 45%;
     z-index: -1;
   }
 
@@ -178,8 +206,9 @@ p{
     color: $color-primary;
     opacity: 0.75;
     font-size: 12pt;
-    font-family: "Open Sans SemiBold", serif;
+    font-family: "Open Sans", serif;
     text-align: left;
+    font-weight: 600;
     @media only screen and (min-width: 1280px) {
       font-size: 15pt;
       }
@@ -259,41 +288,12 @@ p{
   h5{
     padding: 25px 0;
   }
-  //div.social{
-  //  @include center-test(95%);
-  //  font: 13pt "Open Sans";
-  //  a {
-  //    background-color: #black;
-  //    &:link {
-  //      color: #FFFFFF;
-  //    }
-  //    &:visited {
-  //      color: white;
-  //    }
-  //  }
-  //  margin-top: 30pt;
-  //
-  //  @media only screen and (max-width: 767px) {
-  //    font-size: 18pt;
-  //  }
-  //  @media only screen and (max-width: 414px) {
-  //    font-size: 10pt;
-  //    margin-top: 17pt;
-  //  }
-  //  @media only screen and (max-width: 375px) {
-  //    font-size: 10pt;
-  //    margin-top: 18pt;
-  //  }
-  //  @media only screen and (max-width: 320px) {
-  //    font-size: 10pt;
-  //    margin-top: 10pt;
-  //  }
-  //}
   .social{
     @include center-test(85%);
     font-size:calc(10px + 0.9vw);
-    font-family: "Open Sans Light", serif;
+    font-family: "Open Sans", serif;
     list-style-type: none;
+    font-weight: 300;
     width: 90%;
     li{
       display: inline;
@@ -333,7 +333,7 @@ p{
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 980px) {
   .responsive-margin {
     margin-bottom: 10px;
   }
@@ -373,6 +373,12 @@ p{
   }
 }
 #contact{
+  .container-fluid{
+    margin-top: 80px;
+    padding:0;
+      }
+
+
   h4.location{
     font-family: "Open Sans" , serif;
     color: $color-primary
@@ -381,13 +387,11 @@ p{
     font-family: "Open Sans" , serif;
     color: $color-primary
   }
-  h6.location{
+  h6.location {
     margin-top: 40px;
-    font-family: "Open Sans" , serif;
-    color: rgba(6,32,51,0.65);
-  }
-  #contact{
-    padding:10px 0 10px;
+    font-family: "Open Sans", serif;
+    color: rgba(6, 32, 51, 0.65);
+    line-height: 15pt;
   }
   .contact-form{
     margin-top: 20px;
@@ -598,8 +602,9 @@ p{
     color: rgba(255,255,255,0.8);
     h1{
       margin-top: 30px;
-      font-family: "Open Sans SemiBold";
-      @media (min-width: 1300px ){
+      font-family: "Open Sans";
+      font-weight: 600;
+      @media (min-width: 1048px ){
         font-size: 60pt;
       }
     }
@@ -617,7 +622,9 @@ p{
   padding: 0 !important;
 }
 .no-paddingleft{
-  padding-left: 0 !important;
+  @media (min-width: 980px){
+    padding-left: 0 !important;
+  }
 }
 
 .no-margin{
@@ -633,6 +640,9 @@ p{
 .btn-test{
   background-color: $color-feature;
   color: white;
+}
+.bvcv:hover .envelope{
+  content: url('../../img/icon/Envelope_active.png');
 }
 
 

@@ -15,18 +15,21 @@ footer {
     color: white;
     &.description {
       margin-top: 40px;
-      font-family: "Open Sans Light", serif;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
     }
     &.description1 {
       margin-top: 80px;
-      font-family: "Open Sans Light", serif;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
       @media (max-width: 990px){
         margin-top: 40px;
       }
     }
     &.sub{
       margin-top: 50px;
-      font-family: "Open Sans Light", serif;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
       span{
         padding-left: 5px;
         padding-right: 5px;
@@ -35,8 +38,9 @@ footer {
     }
     &.brand {
       margin-top: 50px;
-      font-family: "Open Sans SemiBold", serif;
+      font-family: "Open Sans", serif;
       color: darken($color-footer, 23%);
+      font-weight: 600;
       span{
         padding-right: 5px;
       }
@@ -45,8 +49,9 @@ footer {
   h5 {
     &.sub {
       margin-top:15px;
-      font-family: "Open Sans SemiBold", serif;
+      font-family: "Open Sans", serif;
       color: white;
+      font-weight: 600;
     }
   }
   .form{
@@ -109,7 +114,8 @@ footer {
     li{
       background-color: $color-footer;
       color: white;
-      font-family: "Open Sans Light", serif;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
       border: none;
       a{
         display: block;

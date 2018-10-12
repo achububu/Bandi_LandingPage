@@ -124,9 +124,11 @@ nav {
       @include center-test(50%);
       color: white;
       font-size:calc(35px + 1.5vw);
-      font-family: "Open Sans Light", serif;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
       strong{
-        font-family: "Open Sans SemiBold", serif ;
+        font-weight: 600;
+
       }
     }
     h2{
@@ -135,8 +137,9 @@ nav {
       width: 90%;
       font-size:calc(20px + 1.5vw);
       color: white;
-      font-family: "Open Sans Light", serif;
-      @media (max-width: 700px) {
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+        @media (max-width: 700px) {
         @include center-test(63%);
       }
       @media (max-width: 700px) {
@@ -186,7 +189,8 @@ nav {
     .social{
       @include center-test(93%);
       font-size:calc(5px + 1.5vw);
-      font-family: "Open Sans Light", serif;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
       list-style-type: none;
       li{
         display: inline;

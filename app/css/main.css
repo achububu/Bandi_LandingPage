@@ -4424,9 +4424,10 @@ nav {
     transform: translate(-50%, -50%);
     color: white;
     font-size: calc(35px + 1.5vw);
-    font-family: "Open Sans Light", serif; }
+    font-family: "Open Sans", serif;
+    font-weight: 300; }
     .slick-container .slide-text h1.home-text1 strong {
-      font-family: "Open Sans SemiBold", serif; }
+      font-weight: 600; }
   .slick-container .slide-text h2.home-text2 {
     display: block;
     text-align: center;
@@ -4438,7 +4439,8 @@ nav {
     width: 90%;
     font-size: calc(20px + 1.5vw);
     color: white;
-    font-family: "Open Sans Light", serif; }
+    font-family: "Open Sans", serif;
+    font-weight: 300; }
     @media (max-width: 700px) {
       .slick-container .slide-text h2.home-text2 {
         display: block;
@@ -4502,7 +4504,8 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: calc(5px + 1.5vw);
-    font-family: "Open Sans Light", serif;
+    font-family: "Open Sans", serif;
+    font-weight: 300;
     list-style-type: none; }
     .slick-container .slide-text .social li {
       display: inline; }
@@ -5673,7 +5676,7 @@ nav {
         opacity: 1; }
   @media only screen and (max-width: 991px) {
     .inline-slide .slick-container .responsive-margin {
-      margin-bottom: 10%; }
+      margin-bottom: 30px; }
     .inline-slide .slick-container ul.slick-dots {
       position: relative;
       left: 51%;
@@ -5681,6 +5684,14 @@ nav {
 
 #feature {
   padding-bottom: 20px; }
+  #feature .fa-stack {
+    border: 1px solid #0eb493;
+    border-radius: 50%;
+    box-sizing: content-box; }
+  #feature .icon-test {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 #works {
   position: relative;
@@ -5723,16 +5734,19 @@ nav {
 
 h1.header {
   color: #0eb493;
-  font-family: "Open Sans ExtraBold", serif;
+  font-family: "Open Sans", serif;
   font-size: 28pt;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  font-weight: 800; }
 
 h1.content {
   color: #062033;
   font-size: 20pt;
-  font-family: "Open Sans SemiBold", serif;
-  text-align: left; }
+  font-family: "Open Sans", serif;
+  text-align: left;
+  font-weight: 600; }
   @media (max-width: 991px) {
     h1.content {
       text-align: center; } }
@@ -5742,14 +5756,16 @@ h1.content-name {
   font-size: 16pt;
   padding-top: 20px;
   padding-bottom: 10px;
-  font-family: "Open Sans SemiBold", serif; }
+  font-weight: 600;
+  font-family: "Open Sans", serif; }
 
 h4.background {
   position: relative;
   z-index: 1;
-  font: 20pt 'Open Sans SemiBold';
+  font: 20pt 'Open Sans';
   margin-top: 0;
   text-align: center;
+  font-weight: 600;
   text-transform: uppercase;
   opacity: 0.5;
   color: #c3c6c7; }
@@ -5758,15 +5774,20 @@ h4.background {
   h4.background:before {
     border-top: 2px solid #dce1e5;
     content: "";
-    margin: 0 auto;
-    /* this centers the line to the full width specified */
     position: absolute;
     /* positioning must be absolute here, and relative positioning must be applied to the parent */
     top: 50%;
     left: 0;
+    width: 45%;
+    z-index: -1; }
+  h4.background:after {
+    border-top: 2px solid #dce1e5;
+    content: "";
+    position: absolute;
+    /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%;
     right: 0;
-    bottom: 0;
-    width: 95%;
+    width: 45%;
     z-index: -1; }
   h4.background span {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
@@ -5783,8 +5804,9 @@ p.content {
   color: #062033;
   opacity: 0.75;
   font-size: 12pt;
-  font-family: "Open Sans SemiBold", serif;
-  text-align: left; }
+  font-family: "Open Sans", serif;
+  text-align: left;
+  font-weight: 600; }
   @media only screen and (min-width: 1280px) {
     p.content {
       font-size: 15pt; } }
@@ -5862,8 +5884,9 @@ p.content {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: calc(10px + 0.9vw);
-    font-family: "Open Sans Light", serif;
+    font-family: "Open Sans", serif;
     list-style-type: none;
+    font-weight: 300;
     width: 90%; }
     #team .overlay .overlay-text .social li {
       display: inline; }
@@ -5889,7 +5912,7 @@ p.content {
 #team .img-hover:hover .text-center .content-name {
   color: #26bb9e; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 980px) {
   .responsive-margin {
     margin-bottom: 10px; } }
 
@@ -5920,6 +5943,9 @@ p.content {
 #contact {
   /* Input Styles */
   /* Send Button Styles */ }
+  #contact .container-fluid {
+    margin-top: 80px;
+    padding: 0; }
   #contact h4.location {
     font-family: "Open Sans" , serif;
     color: #062033; }
@@ -5928,10 +5954,9 @@ p.content {
     color: #062033; }
   #contact h6.location {
     margin-top: 40px;
-    font-family: "Open Sans" , serif;
-    color: rgba(6, 32, 51, 0.65); }
-  #contact #contact {
-    padding: 10px 0 10px; }
+    font-family: "Open Sans", serif;
+    color: rgba(6, 32, 51, 0.65);
+    line-height: 15pt; }
   #contact .contact-form {
     margin-top: 20px; }
   #contact .contact-text {
@@ -6088,8 +6113,9 @@ p.content {
     color: rgba(255, 255, 255, 0.8); }
     #fun .text-center h1 {
       margin-top: 30px;
-      font-family: "Open Sans SemiBold"; }
-      @media (min-width: 1300px) {
+      font-family: "Open Sans";
+      font-weight: 600; }
+      @media (min-width: 1048px) {
         #fun .text-center h1 {
           font-size: 60pt; } }
     #fun .text-center h4 {
@@ -6103,8 +6129,9 @@ p.content {
 .no-padding {
   padding: 0 !important; }
 
-.no-paddingleft {
-  padding-left: 0 !important; }
+@media (min-width: 980px) {
+  .no-paddingleft {
+    padding-left: 0 !important; } }
 
 .no-margin {
   margin: 0 !important; }
@@ -6118,6 +6145,9 @@ p.content {
 .btn-test {
   background-color: #0eb493;
   color: white; }
+
+.bvcv:hover .envelope {
+  content: url("../../img/icon/Envelope_active.png"); }
 
 /* -------------------------------------------------------------
   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
@@ -7235,30 +7265,35 @@ footer {
     color: white; }
     footer h6.description {
       margin-top: 40px;
-      font-family: "Open Sans Light", serif; }
+      font-family: "Open Sans", serif;
+      font-weight: 300; }
     footer h6.description1 {
       margin-top: 80px;
-      font-family: "Open Sans Light", serif; }
+      font-family: "Open Sans", serif;
+      font-weight: 300; }
       @media (max-width: 990px) {
         footer h6.description1 {
           margin-top: 40px; } }
     footer h6.sub {
       margin-top: 50px;
-      font-family: "Open Sans Light", serif; }
+      font-family: "Open Sans", serif;
+      font-weight: 300; }
       footer h6.sub span {
         padding-left: 5px;
         padding-right: 5px;
         color: #0e5144; }
     footer h6.brand {
       margin-top: 50px;
-      font-family: "Open Sans SemiBold", serif;
-      color: #0c4439; }
+      font-family: "Open Sans", serif;
+      color: #0c4439;
+      font-weight: 600; }
       footer h6.brand span {
         padding-right: 5px; }
   footer h5.sub {
     margin-top: 15px;
-    font-family: "Open Sans SemiBold", serif;
-    color: white; }
+    font-family: "Open Sans", serif;
+    color: white;
+    font-weight: 600; }
   footer .form {
     padding: 0;
     margin-top: 30px;
@@ -7306,7 +7341,8 @@ footer {
   footer ul.explore li {
     background-color: #1ea78d;
     color: white;
-    font-family: "Open Sans Light", serif;
+    font-family: "Open Sans", serif;
+    font-weight: 300;
     border: none; }
     footer ul.explore li a {
       display: block;
