@@ -4401,7 +4401,7 @@ nav {
         display: block;
         width: 0.48vw;
         height: 0.48vw;
-        border-radius: 7vw;
+        border-radius: 50%;
         background-color: transparent;
         border: 1px solid white;
         opacity: 0.5; }
@@ -5667,7 +5667,7 @@ nav {
         display: block;
         width: 12px;
         height: 12px;
-        border-radius: 9px;
+        border-radius: 50%;
         background-color: transparent;
         border: 1px solid #062033;
         opacity: 0.5; }
@@ -5778,7 +5778,7 @@ h4.background {
     /* positioning must be absolute here, and relative positioning must be applied to the parent */
     top: 50%;
     left: 0;
-    width: 45%;
+    width: 40%;
     z-index: -1; }
   h4.background:after {
     border-top: 2px solid #dce1e5;
@@ -5787,7 +5787,7 @@ h4.background {
     /* positioning must be absolute here, and relative positioning must be applied to the parent */
     top: 50%;
     right: 0;
-    width: 45%;
+    width: 40%;
     z-index: -1; }
   h4.background span {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
@@ -5798,7 +5798,7 @@ h4.background {
     #works h4.background span, #contact h4.background span {
       background: white; }
     #fun h4.background span {
-      background-color: rgba(6, 32, 51, 0.9); }
+      background: 0; }
 
 p.content {
   color: #062033;
