@@ -4419,7 +4419,7 @@ nav {
     text-align: center;
     z-index: 11;
     position: absolute;
-    top: 50%;
+    top: 59.4%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -4433,7 +4433,7 @@ nav {
     text-align: center;
     z-index: 11;
     position: absolute;
-    top: 60%;
+    top: 71%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -4447,7 +4447,7 @@ nav {
         text-align: center;
         z-index: 11;
         position: absolute;
-        top: 63%;
+        top: 73%;
         left: 50%;
         transform: translate(-50%, -50%); } }
     @media (max-width: 700px) {
@@ -4460,7 +4460,7 @@ nav {
       text-align: center;
       z-index: 11;
       position: absolute;
-      top: 67%;
+      top: 79%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: calc(5px + 1.2vw); }
@@ -4470,7 +4470,7 @@ nav {
           text-align: center;
           z-index: 11;
           position: absolute;
-          top: 73%;
+          top: 83%;
           left: 50%;
           transform: translate(-50%, -50%); } }
   .slick-container .slide-text h2.no-background {
@@ -4500,7 +4500,7 @@ nav {
     text-align: center;
     z-index: 11;
     position: absolute;
-    top: 93%;
+    top: 95.2%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: calc(5px + 1.5vw);
@@ -5653,8 +5653,8 @@ nav {
   .inline-slide .slick-container ul.slick-dots {
     position: relative;
     left: 51%;
-    margin-top: 5%;
-    margin-bottom: 2%; }
+    margin-top: 58px;
+    margin-bottom: 38px; }
     @media only screen and (max-width: 991px) {
       .inline-slide .slick-container ul.slick-dots {
         position: relative;
@@ -5692,6 +5692,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center; }
+  #feature br {
+    display: block;
+    margin: 16px 0;
+    content: ""; }
 
 #works {
   position: relative;
@@ -5733,6 +5737,9 @@ nav {
     margin-top: 10px; }
   #team .fa-stack-1x {
     background: rgba(0, 0, 0, 0.5); }
+  #team ul.slick-dots {
+    margin-top: 68px;
+    margin-bottom: 34px; }
 
 h1.header {
   color: #0eb493;
@@ -5748,7 +5755,8 @@ h1.content {
   font-size: 20pt;
   font-family: "Open Sans", serif;
   text-align: left;
-  font-weight: 600; }
+  font-weight: 600;
+  letter-spacing: -0.02em; }
   @media (max-width: 991px) {
     h1.content {
       text-align: center; } }
@@ -5756,8 +5764,7 @@ h1.content {
 h1.content-name {
   color: #062033;
   font-size: 16pt;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 16px;
   font-weight: 600;
   font-family: "Open Sans", serif; }
 
@@ -5769,13 +5776,13 @@ h4.background {
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
-  opacity: 0.5;
+  opacity: 0.7;
   color: #c3c6c7; }
   #fun h4.background {
     color: white;
     opacity: 1; }
   h4.background:before {
-    border-top: 2px solid #dce1e5;
+    border-top: 1px solid #dce1e5;
     content: "";
     position: absolute;
     /* positioning must be absolute here, and relative positioning must be applied to the parent */
@@ -5784,7 +5791,7 @@ h4.background {
     width: 40%;
     z-index: -1; }
   h4.background:after {
-    border-top: 2px solid #dce1e5;
+    border-top: 1px solid #dce1e5;
     content: "";
     position: absolute;
     /* positioning must be absolute here, and relative positioning must be applied to the parent */
@@ -5821,7 +5828,13 @@ p.content {
   p.content.name {
     color: #062033;
     font-size: 11pt;
-    font-family: "Open Sans", serif; }
+    font-family: "Open Sans", serif;
+    margin-top: 17px; }
+    #team p.content.name {
+      margin-top: 8px; }
+  #works p.content, #contact p.content {
+    margin-top: -5px;
+    margin-bottom: 5px; }
 
 .overlay {
   position: absolute;
@@ -5929,19 +5942,25 @@ p.content {
   .row.title {
     margin-top: 90px; }
   .row.heart {
-    margin-top: 10px; }
+    margin-top: 12px; }
+    #work .row.heart {
+      margin-top: 9px; }
   .row.content {
-    margin-top: 60px; }
+    margin-top: 52px; }
     #team .row.content {
-      margin-top: 100px; }
+      margin-top: 105px; }
     #contact .row.content {
       margin-top: 80px; }
     #works .row.content {
       margin-top: 40px; }
+    #contact .row.content {
+      margin-top: 68px; }
   .container-fluid .row {
     margin-top: 30px; }
+    #works .container-fluid .row {
+      margin-top: 37px; }
   .row.footer {
-    margin-top: 100px; }
+    margin-top: 97px; }
 
 #contact {
   /* Input Styles */
@@ -5956,7 +5975,8 @@ p.content {
     color: #062033; }
   #contact h3.location {
     font-family: "Open Sans" , serif;
-    color: #062033; }
+    color: #062033;
+    margin-bottom: 32px; }
   #contact h6.location {
     margin-top: 40px;
     font-family: "Open Sans", serif;
@@ -6024,7 +6044,8 @@ p.content {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    margin: auto; }
+    margin: auto;
+    margin-top: -5px; }
     #contact .form-btn span {
       padding-right: 15px;
       color: #0eb493; }
@@ -6115,18 +6136,18 @@ p.content {
       margin-top: 40px; } }
   #fun .bgrfun {
     background-color: rgba(6, 32, 51, 0.8);
-    padding-bottom: 160px; }
+    padding-bottom: 155px; }
   #fun .text-center {
-    color: rgba(255, 255, 255, 0.8); }
+    color: white; }
     #fun .text-center h1 {
-      margin-top: 30px;
+      margin-top: 33px;
       font-family: "Open Sans";
       font-weight: 600; }
       @media (min-width: 1048px) {
         #fun .text-center h1 {
           font-size: 60pt; } }
     #fun .text-center h4 {
-      margin-top: 5px;
+      margin-top: 3px;
       font-family: "Open Sans";
       text-transform: uppercase; }
 
@@ -6135,6 +6156,8 @@ p.content {
 
 .no-padding {
   padding: 0 !important; }
+  #contact .no-padding {
+    padding: 0 15px 0 0 !important; }
 
 @media (min-width: 980px) {
   .no-paddingleft {
@@ -7263,7 +7286,8 @@ p.content {
 
 footer {
   background-color: #1ea78d;
-  border-top: 4px solid #062033; }
+  border-top: 5px solid #062033;
+  padding-bottom: 60px; }
   footer .container {
     padding-bottom: 30px; }
   footer h2.brand {
@@ -7272,20 +7296,23 @@ footer {
   footer h6 {
     color: white; }
     footer h6.description {
-      margin-top: 40px;
+      margin-top: 42px;
       font-family: "Open Sans", serif;
       font-weight: 300; }
     footer h6.description1 {
-      margin-top: 80px;
+      margin-top: 120px;
       font-family: "Open Sans", serif;
       font-weight: 300; }
       @media (max-width: 990px) {
         footer h6.description1 {
           margin-top: 40px; } }
     footer h6.sub {
-      margin-top: 50px;
+      margin-top: 62px;
       font-family: "Open Sans", serif;
-      font-weight: 300; }
+      font-weight: 300;
+      border-left: 1px solid #177e72;
+      padding-left: 15px;
+      line-height: 24pt; }
       footer h6.sub span {
         padding-left: 5px;
         padding-right: 5px;
@@ -7304,7 +7331,7 @@ footer {
     font-weight: 600; }
   footer .form {
     padding: 0;
-    margin-top: 30px;
+    margin-top: 48px;
     position: relative; }
   footer .input {
     width: 100%;
@@ -7346,26 +7373,28 @@ footer {
       color: white; }
   footer .form-btn:active {
     opacity: 0.9; }
-  footer ul.explore li {
-    background-color: #1ea78d;
-    color: white;
-    font-family: "Open Sans", serif;
-    font-weight: 300;
-    border: none; }
-    footer ul.explore li a {
-      display: block;
+  footer ul.explore {
+    margin-top: 30px; }
+    footer ul.explore li {
+      background-color: #1ea78d;
       color: white;
-      -webkit-font-smoothing: antialiased;
-      text-decoration: none;
-      transition: background .5s ease .300ms; }
-      @media only screen and (min-width: 980px) {
-        footer ul.explore li a {
-          font-size: 12px; } }
-      @media only screen and (max-width: 980px) {
-        footer ul.explore li a {
-          font-size: 11px; } }
-      footer ul.explore li a:hover {
-        color: #062033; }
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+      border: none; }
+      footer ul.explore li a {
+        display: block;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        text-decoration: none;
+        transition: background .5s ease .300ms; }
+        @media only screen and (min-width: 980px) {
+          footer ul.explore li a {
+            font-size: 12px; } }
+        @media only screen and (max-width: 980px) {
+          footer ul.explore li a {
+            font-size: 11px; } }
+        footer ul.explore li a:hover {
+          color: #062033; }
   @media only screen and (max-width: 980px) {
     footer .responsive-margin {
       text-align: center;
