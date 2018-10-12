@@ -84,6 +84,16 @@
   width: 100%;
   display: block !important;
   overflow: hidden;
+  .fa-stack{
+    border: 1px solid white;
+    border-radius: 50%;
+    box-sizing: content-box;
+  }
+  .icon-test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .btn{
     font-family:  "Open Sans";
     font-weight: 700;
@@ -274,7 +284,7 @@ p{
   text-align: center;
   h3 {
     font-weight: 700;
-    margin-top: 10pt;
+    margin-top: 24px;
     @media only screen and (max-width: 767px) {
       font-size: 18pt;
     }
@@ -283,7 +293,7 @@ p{
     }
   }
   h5 {
-    margin-top: 10px;
+    margin-top: 6px;
     @media only screen and (min-width: 1366px) {
       font-size: 15pt;
     }

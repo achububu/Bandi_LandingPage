@@ -4433,7 +4433,7 @@ nav {
     text-align: center;
     z-index: 11;
     position: absolute;
-    top: 70%;
+    top: 69.6%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -4460,7 +4460,7 @@ nav {
       text-align: center;
       z-index: 11;
       position: absolute;
-      top: 77.3%;
+      top: 77.1%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: calc(5px + 1.2vw); }
@@ -4483,7 +4483,7 @@ nav {
       *display: inline;
       *vertical-align: auto;
       position: relative;
-      padding: 0 20px; }
+      padding: 0 32px; }
       .slick-container .slide-text h2.no-background span:before, .slick-container .slide-text h2.no-background span:after {
         content: '';
         display: block;
@@ -4500,7 +4500,7 @@ nav {
     text-align: center;
     z-index: 11;
     position: absolute;
-    top: 93.8%;
+    top: 94%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: calc(5px + 1.5vw);
@@ -5708,6 +5708,14 @@ nav {
   width: 100%;
   display: block !important;
   overflow: hidden; }
+  #works .fa-stack {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-sizing: content-box; }
+  #works .icon-test {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   #works .btn {
     font-family: "Open Sans";
     font-weight: 700;
@@ -5862,7 +5870,7 @@ p.content {
   text-align: center; }
   #works .overlay .overlay-text h3 {
     font-weight: 700;
-    margin-top: 10pt; }
+    margin-top: 24px; }
     @media only screen and (max-width: 767px) {
       #works .overlay .overlay-text h3 {
         font-size: 18pt; } }
@@ -5870,7 +5878,7 @@ p.content {
       #works .overlay .overlay-text h3 {
         font-size: 12pt; } }
   #works .overlay .overlay-text h5 {
-    margin-top: 10px; }
+    margin-top: 6px; }
     @media only screen and (min-width: 1366px) {
       #works .overlay .overlay-text h5 {
         font-size: 15pt; } }

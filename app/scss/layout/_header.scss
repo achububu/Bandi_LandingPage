@@ -48,7 +48,7 @@ nav {
     a {
       font-family: "Open Sans", serif;
       font-size: 13px;
-      padding:30px 2px 25px 2px;
+      padding: 30px 2px 25px 2px;
       margin:0 15px;
       outline: 0;
       &:link {
@@ -133,7 +133,7 @@ nav {
     }
     h2{
       &.home-text2 {
-      @include center-test(70%);
+      @include center-test(69.6%);
       width: 90%;
       font-size:calc(20px + 1.5vw);
       color: white;
@@ -151,7 +151,7 @@ nav {
 
 
         &.text3 {
-        @include center-test(77.3%);
+        @include center-test(77.1%);
         font-size:calc(5px + 1.2vw);
         @media (max-width: 700px) {
           @include center-test(80%);
@@ -169,7 +169,7 @@ nav {
           *display: inline;
           *vertical-align: auto;
           position: relative;
-          padding: 0 20px;
+          padding: 0 32px;
 
           &:before, &:after {
             content: '';
@@ -187,7 +187,7 @@ nav {
 
     }
     .social{
-      @include center-test(93.8%);
+      @include center-test(94%);
       font-size:calc(5px + 1.5vw);
       font-family: "Open Sans", serif;
       font-weight: 300;
