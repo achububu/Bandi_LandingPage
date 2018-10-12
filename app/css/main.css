@@ -4419,11 +4419,11 @@ nav {
     text-align: center;
     z-index: 11;
     position: absolute;
-    top: 59.4%;
+    top: 61.8%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: calc(35px + 1.5vw);
+    font-size: calc(38px + 1.5vw);
     font-family: "Open Sans", serif;
     font-weight: 300; }
     .slick-container .slide-text h1.home-text1 strong {
@@ -4433,7 +4433,7 @@ nav {
     text-align: center;
     z-index: 11;
     position: absolute;
-    top: 71%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -4447,7 +4447,7 @@ nav {
         text-align: center;
         z-index: 11;
         position: absolute;
-        top: 73%;
+        top: 72%;
         left: 50%;
         transform: translate(-50%, -50%); } }
     @media (max-width: 700px) {
@@ -4460,7 +4460,7 @@ nav {
       text-align: center;
       z-index: 11;
       position: absolute;
-      top: 79%;
+      top: 77.3%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: calc(5px + 1.2vw); }
@@ -4470,7 +4470,7 @@ nav {
           text-align: center;
           z-index: 11;
           position: absolute;
-          top: 83%;
+          top: 80%;
           left: 50%;
           transform: translate(-50%, -50%); } }
   .slick-container .slide-text h2.no-background {
@@ -4500,7 +4500,7 @@ nav {
     text-align: center;
     z-index: 11;
     position: absolute;
-    top: 95.2%;
+    top: 93.8%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: calc(5px + 1.5vw);

@@ -121,9 +121,9 @@ nav {
 
     h1.home-text1 {
       width: 90%;
-      @include center-test(59.4%);
+      @include center-test(61.8%);
       color: white;
-      font-size:calc(35px + 1.5vw);
+      font-size:calc(38px + 1.5vw);
       font-family: "Open Sans", serif;
       font-weight: 300;
       strong{
@@ -133,14 +133,14 @@ nav {
     }
     h2{
       &.home-text2 {
-      @include center-test(71%);
+      @include center-test(70%);
       width: 90%;
       font-size:calc(20px + 1.5vw);
       color: white;
       font-family: "Open Sans", serif;
       font-weight: 300;
         @media (max-width: 700px) {
-        @include center-test(73%);
+        @include center-test(72%);
       }
       @media (max-width: 700px) {
         font-size: calc(15px + 1.5vw);
@@ -151,10 +151,10 @@ nav {
 
 
         &.text3 {
-        @include center-test(79%);
+        @include center-test(77.3%);
         font-size:calc(5px + 1.2vw);
         @media (max-width: 700px) {
-          @include center-test(83%);
+          @include center-test(80%);
         }
       }
     }
@@ -187,7 +187,7 @@ nav {
 
     }
     .social{
-      @include center-test(95.2%);
+      @include center-test(93.8%);
       font-size:calc(5px + 1.5vw);
       font-family: "Open Sans", serif;
       font-weight: 300;
