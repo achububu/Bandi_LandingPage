@@ -7255,7 +7255,8 @@ p.content {
   margin-top: 100px; }
 
 footer {
-  background-color: #1ea78d; }
+  background-color: #1ea78d;
+  border-top: 4px solid #062033; }
   footer .container {
     padding-bottom: 30px; }
   footer h2.brand {
