@@ -587,6 +587,9 @@ p{
   -o-background-size: cover;
   -ms-background-size: cover;
   background-size: cover;
+  img{
+    max-width: 50%;
+  }
   
   .responsive-margin{
     @media only screen and (max-width: 980px) {
