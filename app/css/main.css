@@ -4340,13 +4340,19 @@ nav {
       nav a.navbar-brand {
         padding: 30px 2px 25px 2px !important; } }
   nav .brand {
-    padding-left: 10px;
     color: rgba(250, 250, 250, 0.35) !important;
     font-family: 'Open Sans', serif;
     font-size: 11pt; }
     @media (max-width: 768px) {
       nav .brand {
         font-size: 9pt; } }
+  nav .dash {
+    color: #17526e;
+    margin-left: 18px;
+    margin-right: 6px;
+    font-family: "Open Sans", serif;
+    font-size: 13pt;
+    text-decoration: none; }
 
 @media (max-width: 768px) {
   #navbarmenu li {
@@ -4355,9 +4361,11 @@ nav {
 #navbarmenu li a {
   font-family: "Open Sans", serif;
   font-size: 13px;
-  padding: 30px 2px 25px 2px;
+  padding: 30px 2px 21px 2px;
   margin: 0 15px;
-  outline: 0; }
+  boder-top: 1px solid rgba(0, 0, 0, 0);
+  outline: 0;
+  letter-spacing: 0.05em; }
   #navbarmenu li a:link {
     color: #FFFFFF; }
   #navbarmenu li a:visited {
@@ -4419,7 +4427,7 @@ nav {
     text-align: center;
     z-index: 11;
     position: absolute;
-    top: 61.8%;
+    top: 61.6%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -4500,10 +4508,10 @@ nav {
     text-align: center;
     z-index: 11;
     position: absolute;
-    top: 94%;
+    top: 93.3%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: calc(5px + 1.5vw);
+    font-size: calc(5px + 0.7vw);
     font-family: "Open Sans", serif;
     font-weight: 300;
     list-style-type: none; }
@@ -4525,7 +4533,7 @@ nav {
           text-decoration: none; }
 
 .navbar-dark {
-  background-color: rgba(10, 31, 35, 0.2);
+  background-color: #0a1f23;
   border: 0; }
   @media (max-width: 768px) {
     .navbar-dark {
@@ -5720,9 +5728,9 @@ nav {
     font-family: "Open Sans";
     font-weight: 700;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     outline: none;
-    padding: 5px auto;
+    padding: 6px 22px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
@@ -5869,19 +5877,22 @@ p.content {
   transform: translate(-50%, -50%);
   text-align: center; }
   #works .overlay .overlay-text h3 {
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 24px; }
+    @media only screen and (min-width: 1024px) {
+      #works .overlay .overlay-text h3 {
+        font-size: 14pt !important; } }
     @media only screen and (max-width: 767px) {
       #works .overlay .overlay-text h3 {
         font-size: 18pt; } }
     @media only screen and (max-width: 500px) {
       #works .overlay .overlay-text h3 {
-        font-size: 12pt; } }
+        font-size: 11pt; } }
   #works .overlay .overlay-text h5 {
     margin-top: 6px; }
-    @media only screen and (min-width: 1366px) {
+    @media only screen and (min-width: 1024px) {
       #works .overlay .overlay-text h5 {
-        font-size: 15pt; } }
+        font-size: 11pt !important; } }
   #works .overlay .overlay-text span {
     font-size: 13pt; }
     @media only screen and (max-width: 767px) {
@@ -5949,9 +5960,11 @@ p.content {
   margin-top: 25px; }
   .row.title {
     margin-top: 90px; }
+    #feature .row.title {
+      margin-top: 67px; }
   .row.heart {
-    margin-top: 12px; }
-    #work .row.heart {
+    margin-top: 9px; }
+    #feature .row.heart, #works .row.heart {
       margin-top: 9px; }
   .row.content {
     margin-top: 52px; }

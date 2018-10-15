@@ -98,9 +98,9 @@
     font-family:  "Open Sans";
     font-weight: 700;
     border:none;
-    border-radius:3px;
+    border-radius:5px;
     outline: none;
-    padding: 5px auto;
+    padding: 6px 22px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -283,19 +283,24 @@ p{
   transform: translate(-50%, -50%);
   text-align: center;
   h3 {
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 24px;
+    @media only screen and (min-width: 1024px) {
+      font-size: 14pt !important;
+    }
+
     @media only screen and (max-width: 767px) {
       font-size: 18pt;
     }
     @media only screen and (max-width: 500px) {
-      font-size: 12pt;
+      font-size: 11pt;
     }
   }
   h5 {
     margin-top: 6px;
-    @media only screen and (min-width: 1366px) {
-      font-size: 15pt;
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 11pt !important;
     }
   }
   span {
@@ -378,13 +383,17 @@ p{
   position: relative;
   margin-top: 25px;
   &.title{
+    #feature &{
+      margin-top: 67px;
+    }
     margin-top: 90px;
   }
   &.heart{
-    margin-top: 12px;
-    #work &{
+    margin-top: 9px;
+    #feature &,#works &{
       margin-top: 9px;
     }
+
   }
   &.content {
     margin-top: 52px;
