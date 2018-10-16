@@ -10,6 +10,7 @@
   .slick-container {
     .slick-item {
       position: relative;
+      outline: 0;
     }
     ul.slick-dots {
       position: relative;
@@ -26,8 +27,8 @@
         button:before {
           content: '';
           display: block;
-          width: 12px;
-          height: 12px;
+          width: 8px;
+          height: 8px;
           border-radius: 50%;
           background-color: transparent;
           border: 1px solid #062033;
@@ -69,6 +70,23 @@
     display: block;
     margin: 16px 0;
     content:"";
+  }
+  .slick-container {
+    .slick-item {
+      outline:0;
+      position: relative;
+      div{
+        &.col-md-10,&.col-md-2{
+          padding:0;
+        }
+        &.col-md-2{
+          //text-align: left;
+          @media (min-width: 991px){
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -142,7 +160,7 @@ h1 {
   &.header {
     color: $color-feature;
     font-family: "Open Sans", serif;
-    font-size: 28pt;
+    font-size: 28px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: -0.02em;
@@ -150,7 +168,7 @@ h1 {
   }
   &.content {
       color: $color-primary;
-      font-size: 20pt;
+      font-size: 20px;
       font-family: "Open Sans", serif;
       text-align: left;
       font-weight: 600;
@@ -171,7 +189,7 @@ h1 {
 h4.background {
   position: relative;
   z-index: 1;
-  font: 15pt 'Open Sans';
+  font: 13pt 'Open Sans';
   margin-top: 0;
   text-align: center;
   font-weight: 600;
@@ -226,11 +244,11 @@ h4.background {
 p{
   &.content{
     color: $color-primary;
-    opacity: 0.8;
     font-size: 12pt;
     font-family: "Open Sans", serif;
     text-align: left;
     font-weight: 600;
+    opacity: 0.8;
     @media only screen and (min-width: 1280px) {
       font-size: 15pt;
       }
@@ -239,12 +257,16 @@ p{
     }
     #works & , #team  &, #contact & {
       text-align: center;
+
     }
     &.name{
       color: $color-primary;
-      font-size: 11pt;
+      font-size: 13px;
       font-family: "Open Sans", serif;
       margin-top: 17px;
+      font-weight:400;
+      opacity: 0.7;
+      line-height: 21px;
       #team &{
         margin-top: 8px;
       }
@@ -441,7 +463,7 @@ p{
   h6.location {
     margin-top: 40px;
     font-family: "Open Sans", serif;
-    color: rgb(6, 32, 51);
+    color: rgba(6, 32, 51,0.6);
     line-height: 20pt;
   }
   .contact-form{
