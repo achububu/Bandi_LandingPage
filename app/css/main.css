@@ -4589,7 +4589,7 @@ nav {
           text-decoration: none; }
 
 .navbar-dark {
-  background-color: #0a1f23;
+  background-color: rgba(10, 31, 35, 0.5);
   border: 0;
   font-size: 16px; }
   @media (max-width: 768px) {
@@ -6031,9 +6031,9 @@ p.content {
   position: relative;
   margin-top: 25px; }
   .row.title {
-    margin-top: 90px; }
+    margin-top: 94px; }
     #feature .row.title {
-      margin-top: 67px; }
+      margin-top: 72px; }
   .row.heart {
     margin-top: 17px; }
   .row.content {
@@ -6239,7 +6239,7 @@ p.content {
       font-weight: 600; }
       @media (min-width: 1048px) {
         #fun .text-center h1 {
-          font-size: 60pt; } }
+          font-size: 60px; } }
     #fun .text-center h4 {
       margin-top: 3px;
       font-family: "Open Sans";
