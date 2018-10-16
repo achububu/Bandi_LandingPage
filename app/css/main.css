@@ -5837,7 +5837,7 @@ p.content {
   opacity: 0.8; }
   @media only screen and (min-width: 1280px) {
     p.content {
-      font-size: 15pt; } }
+      font-size: 18px; } }
   @media (max-width: 991px) {
     p.content {
       text-align: center; } }
