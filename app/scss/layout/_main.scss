@@ -270,6 +270,11 @@ p{
       #team &{
         margin-top: 8px;
       }
+      #feature &{
+        @media (min-width: 991px){
+          text-align: justify;
+        }
+      }
     }
     #works &, #contact &{
       margin-top: -5px;
@@ -340,7 +345,17 @@ p{
   text-align: center;
   h4{
     margin-top:25px ;
+    @media only screen and (max-width: 490px) {
+      font-size: 15px;
+    }
+    @media only screen and (max-width: 410px) {
+      font-size: 10px;
+    }
+    @media only screen and (max-width: 350px) {
+      font-size: 8px;
+    }
   }
+
   h5{
     padding: 25px 0;
   }
@@ -410,10 +425,7 @@ p{
     margin-top: 90px;
   }
   &.heart{
-    margin-top: 9px;
-    #feature &,#works &{
-      margin-top: 9px;
-    }
+    margin-top: 17px;
 
   }
   &.content {
@@ -498,6 +510,11 @@ p{
     height:auto;
     opacity: 1;
     margin:25px auto 0;
+  }
+  .form-margin{
+    @media (min-width: 991px){
+      margin-left:-35px;
+    }
   }
 
   /* Input Styles */

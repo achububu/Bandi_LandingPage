@@ -21,8 +21,10 @@ nav {
     color: white !important;
     font-family: 'Pacifico', serif;
     font-size: 23pt ;
+    @media  (max-width: 350px) {
+      font-size:15px;
+    }
     @media  (min-width: 768px) {
-
       padding:30px 2px 25px 2px !important;
   }
   }
@@ -75,6 +77,9 @@ nav {
   }
   .active {
     border-top: 1px solid #32b0ee;
+    @media (max-width: 767px){
+      border-bottom: 1px solid #32b0ee;
+    }
   }
 }
 .slick-slider.slick-dotted{
@@ -132,39 +137,63 @@ nav {
       width: 90%;
       @include center-test(61.6%);
       color: white;
-      font-size:calc(38px + 1.5vw);
+      //font-size:calc(38px + 1.5vw);
+      font-size: 3.875em;
       font-family: "Open Sans", serif;
       font-weight: 300;
       strong{
         font-weight: 600;
-
       }
+      @media (max-width: 766px){
+        @include center-test(50%)
+      }
+      @media (max-width: 450px){
+        font-size: 30px;
+      }
+
     }
     h2{
       &.home-text2 {
       @include center-test(69.6%);
       width: 90%;
-      font-size:calc(20px + 1.5vw);
+      //font-size:calc(20px + 1.5vw);
+      font-size: 3em;
       color: white;
       font-family: "Open Sans", serif;
       font-weight: 300;
-        @media (max-width: 700px) {
-        @include center-test(72%);
-      }
-      @media (max-width: 700px) {
-        font-size: calc(15px + 1.5vw);
-      }
+        @media (max-width: 1024px){
+          @include center-test(71%)
+        }
+        @media (max-width: 766px){
+          @include center-test(63%);
+          font-size: 20px;
+        }
+        @media (max-width: 450px){
+          font-size: 25px;
+        }
+        @media (max-width: 355px){
+          font-size: 20px;
+        }
       .text2 {
         color: $color-header;
       }
-
-
         &.text3 {
         @include center-test(77.1%);
-        font-size:calc(5px + 1.2vw);
-        @media (max-width: 700px) {
-          @include center-test(80%);
+        //font-size:calc(5px + 1.2vw);
+          font-size: 1.125em;
+        @media (max-width: 1024px){
+          @include center-test(79%);
         }
+        @media (max-width: 766px){
+          font-size: 13px;
+          @include center-test(73%);
+        }
+          @media (max-width: 450px){
+            @include center-test(76%);
+          }
+          @media (max-width: 355px){
+            font-size: 11px;
+          }
       }
     }
       &.no-background {
@@ -236,6 +265,7 @@ nav {
   }
   background-color: rgba(10,31,35, 1);
   border: 0;
+  font-size: 16px;
 }
 
 .fa-rotate-45 {
