@@ -5994,7 +5994,7 @@ p.content {
     margin-top: 40px;
     font-family: "Open Sans", serif;
     color: #062033;
-    line-height: 15pt; }
+    line-height: 20pt; }
   #contact .contact-form {
     margin-top: 20px; }
   #contact .contact-text {
@@ -7308,12 +7308,12 @@ footer {
   footer h6 {
     color: white; }
     footer h6.description {
-      margin-top: 42px;
+      margin-top: 36px;
       font-family: "Open Sans", serif;
       font-weight: 300;
       line-height: 18pt; }
     footer h6.description1 {
-      margin-top: 120px;
+      margin-top: 105px;
       font-family: "Open Sans", serif;
       font-weight: 300;
       line-height: 18pt; }
@@ -7323,7 +7323,7 @@ footer {
     footer h6.sub {
       margin-top: 62px;
       font-family: "Open Sans", serif;
-      font-weight: 300;
+      font-weight: 500;
       border-left: 1px solid #177e72;
       padding-left: 15px;
       line-height: 18pt; }
