@@ -7314,6 +7314,7 @@ footer {
       line-height: 18pt; }
     footer h6.description1 {
       margin-top: 105px;
+      margin-left: 2px;
       font-family: "Open Sans", serif;
       font-weight: 300;
       line-height: 18pt; }
@@ -7340,6 +7341,7 @@ footer {
         padding-right: 5px; }
   footer h5.sub {
     margin-top: 15px;
+    margin-left: 2px;
     font-family: "Open Sans", serif;
     color: white;
     font-weight: 600; }
