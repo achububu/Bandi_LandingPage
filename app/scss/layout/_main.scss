@@ -171,7 +171,7 @@ h1 {
 h4.background {
   position: relative;
   z-index: 1;
-  font: 20pt 'Open Sans';
+  font: 15pt 'Open Sans';
   margin-top: 0;
   text-align: center;
   font-weight: 600;
@@ -190,7 +190,7 @@ h4.background {
     position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
     top: 50%;
     left: 0;
-    width: 40%;
+    width: 43.5%;
     z-index: -1;
   }
 
@@ -201,22 +201,22 @@ h4.background {
     position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
     top: 50%;
     right: 0;
-    width: 40%;
+    width: 43.5%;
     z-index: -1;
   }
 
   span {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    background: #f4f7f9;
-    padding: 0 15px;
+    //background: #f4f7f9;
+    //padding: 0 15px;
     #feature & {
-      background: #f4f7f9;
+      //background: #f4f7f9;
     }
     #works & , #contact & {
-      background: white;
+      //background: white;
     }
     #fun &{
-      background: 0;
+      //background: 0;
     }
   }
 }
@@ -226,7 +226,7 @@ h4.background {
 p{
   &.content{
     color: $color-primary;
-    opacity: 0.75;
+    opacity: 0.8;
     font-size: 12pt;
     font-family: "Open Sans", serif;
     text-align: left;
@@ -265,7 +265,6 @@ p{
   right: 0;
   height: 0;
   width: 100%;
-  opacity: 0.9;
   overflow: hidden;
   transition: .5s ease;
   background-color: $color-overlay;
@@ -442,7 +441,7 @@ p{
   h6.location {
     margin-top: 40px;
     font-family: "Open Sans", serif;
-    color: rgba(6, 32, 51, 0.65);
+    color: rgb(6, 32, 51);
     line-height: 15pt;
   }
   .contact-form{

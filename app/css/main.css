@@ -4363,7 +4363,7 @@ nav {
   font-size: 13px;
   padding: 30px 2px 21px 2px;
   margin: 0 15px;
-  boder-top: 1px solid rgba(0, 0, 0, 0);
+  border-top: 1px solid rgba(0, 0, 0, 0);
   outline: 0;
   letter-spacing: 0.05em; }
   #navbarmenu li a:link {
@@ -4395,7 +4395,8 @@ nav {
     right: 1%;
     position: absolute;
     width: auto;
-    top: 60%;
+    height: fit-content;
+    top: 51.2%;
     -webkit-transform: translate(-50%, -50%);
     -khtml-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -5787,7 +5788,7 @@ h1.content-name {
 h4.background {
   position: relative;
   z-index: 1;
-  font: 20pt 'Open Sans';
+  font: 15pt 'Open Sans';
   margin-top: 0;
   text-align: center;
   font-weight: 600;
@@ -5804,7 +5805,7 @@ h4.background {
     /* positioning must be absolute here, and relative positioning must be applied to the parent */
     top: 50%;
     left: 0;
-    width: 40%;
+    width: 43.5%;
     z-index: -1; }
   h4.background:after {
     border-top: 1px solid #dce1e5;
@@ -5813,22 +5814,14 @@ h4.background {
     /* positioning must be absolute here, and relative positioning must be applied to the parent */
     top: 50%;
     right: 0;
-    width: 40%;
+    width: 43.5%;
     z-index: -1; }
   h4.background span {
-    /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    background: #f4f7f9;
-    padding: 0 15px; }
-    #feature h4.background span {
-      background: #f4f7f9; }
-    #works h4.background span, #contact h4.background span {
-      background: white; }
-    #fun h4.background span {
-      background: 0; }
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */ }
 
 p.content {
   color: #062033;
-  opacity: 0.75;
+  opacity: 0.8;
   font-size: 12pt;
   font-family: "Open Sans", serif;
   text-align: left;
@@ -5859,10 +5852,9 @@ p.content {
   right: 0;
   height: 0;
   width: 100%;
-  opacity: 0.9;
   overflow: hidden;
   transition: .5s ease;
-  background-color: #26bb9e; }
+  background-color: rgba(31, 180, 149, 0.9); }
 
 #works .overlay .overlay-text {
   color: white;
@@ -5945,7 +5937,7 @@ p.content {
   height: 100%; }
 
 #team .img-hover:hover .text-center .content-name {
-  color: #26bb9e; }
+  color: rgba(31, 180, 149, 0.9); }
 
 @media only screen and (max-width: 980px) {
   .responsive-margin {
@@ -6001,7 +5993,7 @@ p.content {
   #contact h6.location {
     margin-top: 40px;
     font-family: "Open Sans", serif;
-    color: rgba(6, 32, 51, 0.65);
+    color: #062033;
     line-height: 15pt; }
   #contact .contact-form {
     margin-top: 20px; }
@@ -7307,10 +7299,9 @@ p.content {
 
 footer {
   background-color: #1ea78d;
-  border-top: 5px solid #062033;
-  padding-bottom: 60px; }
+  border-top: 5px solid #062033; }
   footer .container {
-    padding-bottom: 30px; }
+    padding-bottom: 112px; }
   footer h2.brand {
     font-family: "Pacifico", serif;
     color: white; }
@@ -7319,11 +7310,13 @@ footer {
     footer h6.description {
       margin-top: 42px;
       font-family: "Open Sans", serif;
-      font-weight: 300; }
+      font-weight: 300;
+      line-height: 18pt; }
     footer h6.description1 {
       margin-top: 120px;
       font-family: "Open Sans", serif;
-      font-weight: 300; }
+      font-weight: 300;
+      line-height: 18pt; }
       @media (max-width: 990px) {
         footer h6.description1 {
           margin-top: 40px; } }
@@ -7333,15 +7326,15 @@ footer {
       font-weight: 300;
       border-left: 1px solid #177e72;
       padding-left: 15px;
-      line-height: 24pt; }
+      line-height: 18pt; }
       footer h6.sub span {
         padding-left: 5px;
         padding-right: 5px;
-        color: #0e5144; }
+        color: #157562; }
     footer h6.brand {
       margin-top: 50px;
       font-family: "Open Sans", serif;
-      color: #0c4439;
+      color: #062033;
       font-weight: 600; }
       footer h6.brand span {
         padding-right: 5px; }
@@ -7353,47 +7346,46 @@ footer {
   footer .form {
     padding: 0;
     margin-top: 48px;
-    position: relative; }
+    position: relative;
+    border: 2px solid white;
+    border-radius: 3px; }
   footer .input {
     width: 100%;
     padding: 15px;
     background: #1ea78d;
-    border: 1px solid white;
     border-right: #1ea78d;
+    border: none;
     margin-bottom: 25px;
     color: white !important;
     font-size: 13px;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s; }
-  footer .input:hover {
-    border: 1px solid white; }
   footer .input:focus {
     color: white;
-    outline: none;
-    border: 1px solid white; }
+    outline: none; }
   footer .form-btn {
     color: #51bba7;
     background: #1ea78d;
-    border: 1px solid white;
     border-left: 0;
-    border-radius: 3px;
+    border: none;
     outline: none;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1); }
-  footer .form-btn:hover {
-    background: #0eb493;
-    color: white;
-    border: 1px solid white;
-    border-left: 0; }
-    footer .form-btn:hover span {
-      color: white; }
-  footer .form-btn:active {
-    opacity: 0.9; }
+    outline: none !important;
+    transition: all 0.3s; }
+    footer .form-btn:hover {
+      background: #0eb493;
+      color: white;
+      border-left: 0; }
+      footer .form-btn:hover span {
+        color: white; }
+    footer .form-btn:active {
+      opacity: 0.9;
+      color: white !important; }
+    footer .form-btnfocus {
+      background: none;
+      color: white !important; }
   footer ul.explore {
     margin-top: 30px; }
     footer ul.explore li {

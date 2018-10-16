@@ -15,7 +15,7 @@ $(document).ready(function () {
             }, 500);
         });
 
-        $('.btn').click(function (e) {
+        $('#works .btn').click(function (e) {
             e.preventDefault();
             $(this).addClass('btn-test');
             $(this).siblings().removeClass('btn-test');

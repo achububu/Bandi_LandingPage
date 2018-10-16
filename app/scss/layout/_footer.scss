@@ -5,9 +5,8 @@
 footer {
   background-color: #1ea78d;
   border-top: 5px solid #062033;
-  padding-bottom: 60px;
   .container {
-    padding-bottom: 30px;
+    padding-bottom: 112px;
   }
   h2.brand {
     font-family: "Pacifico", serif;
@@ -19,6 +18,7 @@ footer {
       margin-top: 42px;
       font-family: "Open Sans", serif;
       font-weight: 300;
+      line-height: 18pt;
     }
     &.description1 {
       margin-top: 120px;
@@ -27,6 +27,7 @@ footer {
       @media (max-width: 990px){
         margin-top: 40px;
       }
+      line-height: 18pt;
     }
     &.sub{
       margin-top: 62px;
@@ -34,17 +35,17 @@ footer {
       font-weight: 300;
       border-left: 1px solid #177e72;
       padding-left: 15px;
-      line-height: 24pt;
+      line-height: 18pt;
       span{
         padding-left: 5px;
         padding-right: 5px;
-        color: darken($color-footer,20%);
+        color: #157562;
       }
     }
     &.brand {
       margin-top: 50px;
       font-family: "Open Sans", serif;
-      color: darken($color-footer, 23%);
+      color: $color-primary;
       font-weight: 600;
       span{
         padding-right: 5px;
@@ -63,13 +64,15 @@ footer {
     padding: 0;
     margin-top: 48px;
     position:relative;
+    border: 2px solid white;
+    border-radius: 3px;
   }
   .input{
     width: 100%;
     padding: 15px;
     background: #1ea78d;
-    border:1px solid white;
     border-right: #1ea78d;
+    border: none;
     margin-bottom:25px;
     color: white !important;
     font-size:13px;
@@ -79,42 +82,43 @@ footer {
   }
 
   .input:hover{
-    border:1px solid white;
   }
 
   .input:focus{
     color: white;
     outline: none;
-    border: 1px solid white;
   }
   .form-btn{
     color: #51bba7;
     background: #1ea78d;
-    border:1px solid white;
     border-left: 0;
-    border-radius:3px;
+    border: none;
     outline: none;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
+    outline: none !important;
     transition: all 0.3s;;
-    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  }
-
-  .form-btn:hover{
-    background: $color-feature;
-    color: white;
-    border:1px solid white;
-    border-left: 0;
-    span{
+    &:hover{
+      background: $color-feature;
       color: white;
+      border-left: 0;
+      span{
+        color: white;
+      }
+    }
+    &:active{
+      opacity: 0.9;
+      color: white !important;
+    }
+    &focus{
+      background: none;
+      color: white !important;
     }
   }
 
-  .form-btn:active{
-    opacity: 0.9;
-  }
+
+
+
   ul.explore{
     margin-top: 30px;
     li{
