@@ -4345,7 +4345,8 @@ nav {
   nav .brand {
     color: rgba(250, 250, 250, 0.35) !important;
     font-family: 'Open Sans', serif;
-    font-size: 11pt; }
+    font-size: 11pt;
+    vertical-align: top; }
     @media (max-width: 768px) {
       nav .brand {
         font-size: 9pt; } }
@@ -4355,7 +4356,8 @@ nav {
     margin-right: 6px;
     font-family: "Open Sans", serif;
     font-size: 13pt;
-    text-decoration: none; }
+    text-decoration: none;
+    vertical-align: top; }
 
 @media (max-width: 768px) {
   #navbarmenu li {
