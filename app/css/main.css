@@ -7395,7 +7395,9 @@ footer {
       color: white;
       font-family: "Open Sans", serif;
       font-weight: 300;
-      border: none; }
+      border: none;
+      padding-top: 0;
+      padding-bottom: 0; }
       footer ul.explore li a {
         display: block;
         color: white;
@@ -7404,7 +7406,8 @@ footer {
         transition: background .5s ease .300ms; }
         @media only screen and (min-width: 980px) {
           footer ul.explore li a {
-            font-size: 12px; } }
+            font-size: 13px;
+            line-height: 25pt; } }
         @media only screen and (max-width: 980px) {
           footer ul.explore li a {
             font-size: 11px; } }
