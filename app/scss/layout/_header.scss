@@ -1,10 +1,9 @@
-@import "../helpers/variables";
-@import "../helpers/mixins";
 
-/*--------------------------------------------------------------------------*/
-html{
+body{
   font-size: 16px;
+  font-family: "Open Sans", serif;
 }
+
 nav {
   position: relative;
   padding: 0;
@@ -18,7 +17,7 @@ nav {
   }
   a.navbar-brand{
     outline:0;
-    color: white !important;
+    color: #fff !important;
     font-family: 'Pacifico', serif;
     font-size: 23pt ;
     @media  (max-width: 350px) {
@@ -26,10 +25,10 @@ nav {
     }
     @media  (min-width: 768px) {
       padding:30px 2px 25px 2px !important;
-  }
+    }
   }
   .brand{
-    color: rgba(250,250,250,0.35) !important;
+    color: rgba(255,255,255,0.35);
     font-family: 'Open Sans', serif;
     font-size: 11pt ;
     @media  (max-width: 768px) {
@@ -56,7 +55,6 @@ nav {
       text-align: center;
     }
     a {
-      font-family: "Open Sans", serif;
       font-size: 13px;
       padding: 30px 2px 21px 2px;
       margin:0 15px;
@@ -67,7 +65,7 @@ nav {
         color: #FFFFFF;
       }
       &:visited {
-        color: white;
+        color: #fff;
       }
       &:hover{
         background-color: unset;
@@ -92,14 +90,13 @@ nav {
   list-style-type: none;
   margin: 0;
   width: 100%;
-  display: block !important;
+  display: block;
   overflow: hidden;
   position: relative;
-  //width: 100%;
   .slick-item {
     position: relative;
-    //height: 100vh;
     text-align: center;
+    outline: 0;
   }
   ul.slick-dots {
     right: 1%;
@@ -107,7 +104,7 @@ nav {
     //transform: translateX(-50%);
     width: auto;
     height: fit-content;
-    top: 51.2%;
+    top: 51%;
     @include css3-prefix('transform', 'translate(-50%, -50%)');
     li {
       display: block;
@@ -118,11 +115,11 @@ nav {
         height: 0.48vw;
         border-radius: 50%;
         background-color: transparent;
-        border: 1px solid white;
+        border: 1px solid #fff;
         opacity: 0.5;
       }
       &.slick-active button:before {
-        background-color: white;
+        background-color: #fff;
         opacity: 1;
       }
     }
@@ -135,19 +132,19 @@ nav {
       margin-top: 0;
     }
 
-    h1.home-text1 {
+    h1.home-text-01 {
       width: 90%;
       @include center-test(61.6%);
-      color: white;
+      color: #fff;
       //font-size:calc(38px + 1.5vw);
       font-size: 3.875em;
-      font-family: "Open Sans", serif;
       font-weight: 300;
       strong{
         font-weight: 600;
       }
       @media (max-width: 766px){
-        @include center-test(50%)
+        @include center-test(50%);
+        font-size: 35px;
       }
       @media (max-width: 450px){
         font-size: 30px;
@@ -155,13 +152,12 @@ nav {
 
     }
     h2{
-      &.home-text2 {
+      &.home-text-02 {
       @include center-test(69.6%);
       width: 90%;
       //font-size:calc(20px + 1.5vw);
       font-size: 3em;
-      color: white;
-      font-family: "Open Sans", serif;
+      color: #fff;
       font-weight: 300;
         @media (max-width: 1024px){
           @include center-test(71%)
@@ -177,10 +173,10 @@ nav {
         @media (max-width: 355px){
           font-size: 20px;
         }
-      .text2 {
+      .text-02 {
         color: $color-header;
       }
-        &.text3 {
+        &.text-03 {
         @include center-test(77.1%);
         //font-size:calc(5px + 1.2vw);
           font-size: 1.125em;
@@ -227,36 +223,36 @@ nav {
       }
 
     }
-    .social{
-      @include center-test(93.3%);
-      font-size:calc(5px + 0.7vw);
-      font-family: "Open Sans", serif;
-      font-weight: 300;
-      list-style-type: none;
-      li{
-        display: inline;
-        a {
-          outline:0;
-          padding: 10px;
-          &:link {
-            color: rgba(255,255,255,0.5);
-          }
-          &:visited {
-            color: rgba(255,255,255,0.5);
-          }
-          &:hover{
-            color: rgba(255,255,255,1);
-            background-color: unset;
-          }
-          &:focus{
-            color: rgba(250,250,250,1);
-            background-color: unset;
-            text-decoration: none;
-          }
+  }
+}
+#home{
+  & .social{
+    @include center-test(93.3%);
+    font-size:calc(5px + 0.7vw);
+    font-weight: 300;
+    list-style-type: none;
+    li{
+      display: inline;
+      a {
+        outline:0;
+        padding: 10px;
+        &:link {
+          color: rgba(255,255,255,0.5);
+        }
+        &:visited {
+          color: rgba(255,255,255,0.5);
+        }
+        &:hover{
+          color: rgba(255,255,255,1);
+          background-color: unset;
+        }
+        &:focus{
+          color: rgba(255,255,255,1);
+          background-color: unset;
+          text-decoration: none;
         }
       }
     }
-
   }
 }
 
