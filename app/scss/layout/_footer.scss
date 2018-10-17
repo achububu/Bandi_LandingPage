@@ -17,10 +17,9 @@ footer {
     }
   }
   h6 {
-    color: white;
+    color: #fff;
     &.description {
       margin-top: 36px;
-      font-family: "Open Sans", serif;
       font-weight: 300;
       line-height: 18pt;
     }
@@ -28,7 +27,6 @@ footer {
     &.description1 {
       margin-top: 105px;
       margin-left: 2px;
-      font-family: "Open Sans", serif;
       font-weight: 300;
       @media (max-width: 990px){
         margin-top: 40px;
@@ -37,7 +35,6 @@ footer {
     }
     &.sub{
       margin-top: 62px;
-      font-family: "Open Sans", serif;
       font-weight: 500;
       border-left: 1px solid #177e72;
       padding-left: 15px;
@@ -51,7 +48,6 @@ footer {
     }
     &.brand {
       margin-top: 50px;
-      font-family: "Open Sans", serif;
       color: $color-primary;
       font-weight: 600;
       span{
@@ -63,8 +59,7 @@ footer {
     &.sub {
       margin-top:15px;
       margin-left:2px;
-      font-family: "Open Sans", serif;
-      color: white;
+      color: #fff;
       font-weight: 600;
     }
   }
@@ -72,7 +67,7 @@ footer {
     padding: 0;
     margin-top: 48px;
     position:relative;
-    border: 2px solid white;
+    border: 2px solid #fff;
     border-radius: 3px;
   }
   .input{
@@ -82,19 +77,11 @@ footer {
     border-right: #1ea78d;
     border: none;
     margin-bottom:25px;
-    color: white !important;
+    color: #fff;
     font-size:13px;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-  }
-
-  .input:hover{
-  }
-
-  .input:focus{
-    color: white;
-    outline: none;
   }
   .form-btn{
     color: #51bba7;
@@ -108,38 +95,24 @@ footer {
     transition: all 0.3s;;
     &:hover{
       background: $color-feature;
-      color: white;
+      color: #fff;
       border-left: 0;
       span{
-        color: white;
+        color: #fff;
       }
     }
-    &:active{
-      opacity: 0.9;
-      color: white !important;
-    }
-    &focus{
-      background: none;
-      color: white !important;
-    }
   }
-
-
-
-
   ul.explore{
     margin-top: 30px;
     li{
       background-color: $color-footer;
-      color: white;
-      font-family: "Open Sans", serif;
+      color: #fff;
       font-weight: 300;
       border: none;
       padding-top:0;
       padding-bottom:0;
       a{
-        display: block;
-        color: white;
+        color: #fff;
         -webkit-font-smoothing: antialiased;
         text-decoration: none;
         transition: background .5s ease .300ms;

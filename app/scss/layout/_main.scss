@@ -1,5 +1,4 @@
-@import "../helpers/variables";
-@import "../helpers/mixins";
+// todo cai nay co import ben file main.scss roi, import lam chi nua la???
 
 .inline-slide {
   position: relative;
@@ -8,17 +7,12 @@
   color: $color-feature;
 
   .slick-container {
-    .slick-item {
-      position: relative;
-      outline: 0;
-    }
     ul.slick-dots {
       position: relative;
       left: 51%;
       margin-top: 58px;
       margin-bottom: 38px;
       @media only screen and (max-width: 991px) {
-          position: relative;
           left: 51%;
           margin-top: 0;
       }
@@ -47,7 +41,6 @@
         margin-bottom: 30px;
       }
       ul.slick-dots {
-        position: relative;
         left: 51%;
         margin-top: 0;
       }
@@ -61,20 +54,9 @@
     border-radius: 50%;
     box-sizing: content-box;
   }
-  .icon-test{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  br {
-    display: block;
-    margin: 16px 0;
-    content:"";
-  }
   .slick-container {
     .slick-item {
       outline:0;
-      position: relative;
       div{
         &.col-md-10,&.col-md-2{
           padding:0;
@@ -92,28 +74,19 @@
 
 
 #works {
-  position: relative;
-  padding: 0;
-  background-color: white;
-  color: $color-feature;
-  list-style-type: none;
-  margin: 0;
-  min-height: 300px;
-  width: 100%;
-  display: block !important;
-  overflow: hidden;
+  // todo khong hieu sao cai block nay position ralative luon???
+  // nguyen style position, padding, bg white, color, list style, margin, display block, overflow, width 100%??? khong hieu muc dich lam gi het
+  // todo ko duoc ghi style mau la may cai chu white, black blue... ke ca la may mau common white black
+  // hoac la phai #000, #fff hoac la khai bao bien variable $white: #fff
+  // todo PHAI LUON HAN CHE DUNG IMPORTANT tru khi minh bat buoc phai de layout/style cua plugin
   .fa-stack{
-    border: 1px solid white;
+    border: 1px solid #fff;
     border-radius: 50%;
     box-sizing: content-box;
   }
-  .icon-test{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  // todo cam giac doan style nay khong can dung toi luon, xoa het layout van nhu bt???
   .btn{
-    font-family:  "Open Sans";
+    // todo sao font family o day bi lap lai qua vay? font chi khai bao 1 lan tru nhung font dat biet o title chang han thoi
     font-weight: 700;
     border:none;
     border-radius:5px;
@@ -124,20 +97,20 @@
     transition: all 0.3s;
     &:hover{
       background-color: $color-feature;
-      color: white;
+      color: #fff;
     }
     &:active{
-      color: white;
+      color: #fff;
       background-color: $color-feature;
     }
     :focus{
-      color: white;
+      color: #fff;
       background-color: $color-feature;
     }
   }
   .btn-default{
     &:focus{
-      color: white;
+      color: #fff;
       background-color: $color-feature;
     }
   }
@@ -159,7 +132,6 @@
 h1 {
   &.header {
     color: $color-feature;
-    font-family: "Open Sans", serif;
     font-size: 28px;
     text-align: center;
     text-transform: uppercase;
@@ -169,7 +141,7 @@ h1 {
   &.content {
       color: $color-primary;
       font-size: 20px;
-      font-family: "Open Sans", serif;
+    // todo sao font family o day bi lap lai qua vay? font chi khai bao 1 lan tru nhung font dat biet o title chang han thoi
       text-align: left;
       font-weight: 600;
       letter-spacing: -0.02em;
@@ -182,7 +154,6 @@ h1 {
     font-size: 16pt;
     padding-top: 16px;
     font-weight: 600;
-    font-family: "Open Sans", serif;
   }
 }
 
@@ -197,15 +168,14 @@ h4.background {
   opacity: 0.7;
   color: #c3c6c7;
   #fun &{
-    color: white;
+    color: #fff;
     opacity: 1;
   }
 
   &:before {
     border-top: 1px solid #dce1e5;
     content:"";
-    //margin: 0 auto; /* this centers the line to the full width specified */
-    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    position: absolute;
     top: 50%;
     left: 0;
     width: 43.5%;
@@ -215,27 +185,11 @@ h4.background {
   &:after {
     border-top: 1px solid #dce1e5;
     content:"";
-    //margin: 0 auto; /* this centers the line to the full width specified */
-    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    position: absolute;
     top: 50%;
     right: 0;
     width: 43.5%;
     z-index: -1;
-  }
-
-  span {
-    /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    //background: #f4f7f9;
-    //padding: 0 15px;
-    #feature & {
-      //background: #f4f7f9;
-    }
-    #works & , #contact & {
-      //background: white;
-    }
-    #fun &{
-      //background: 0;
-    }
   }
 }
 
@@ -245,7 +199,6 @@ p{
   &.content{
     color: $color-primary;
     font-size: 12pt;
-    font-family: "Open Sans", serif;
     text-align: left;
     font-weight: 600;
     opacity: 0.8;
@@ -262,7 +215,7 @@ p{
     &.name{
       color: $color-primary;
       font-size: 13px;
-      font-family: "Open Sans", serif;
+
       margin-top: 17px;
       font-weight:400;
       opacity: 0.7;
@@ -297,7 +250,7 @@ p{
   background-color: $color-overlay;
 }
 #works .overlay .overlay-text {
-  color: white;
+  color: #fff;
   opacity: 1;
   font: 20pt "Open Sans";
   position: absolute;
@@ -312,9 +265,8 @@ p{
     font-weight: 600;
     margin-top: 24px;
     @media only screen and (min-width: 1024px) {
-      font-size: 14pt !important;
+      font-size: 14pt;
     }
-
     @media only screen and (max-width: 767px) {
       font-size: 18pt;
     }
@@ -324,9 +276,8 @@ p{
   }
   h5 {
     margin-top: 6px;
-
     @media only screen and (min-width: 1024px) {
-      font-size: 11pt !important;
+      font-size: 11pt;
     }
   }
   span {
@@ -338,9 +289,9 @@ p{
 }
 #team .overlay .overlay-text{
   height: inherit;
-  color: white;
+  color: #fff;
   opacity: 1;
-  font: 20pt "Open Sans";
+  font-size: 20pt;
   width: inherit;
   text-align: center;
   h4{
@@ -362,7 +313,6 @@ p{
   .social{
     @include center-test(85%);
     font-size:calc(10px + 0.9vw);
-    font-family: "Open Sans", serif;
     list-style-type: none;
     font-weight: 300;
     width: 90%;
@@ -374,17 +324,17 @@ p{
         padding:0;
         margin:0;
         &:link {
-          color: rgba(255,255,255,1);
+          color: #fff;
         }
         &:visited {
-          color: rgba(255,255,255,1);
+          color: #fff;
         }
         &:hover{
-          color: rgba(255,255,255,1);
+          color: #fff;
           background-color: unset;
         }
         &:focus{
-          color: rgba(250,250,250,1);
+          color: #fff;
           background-color: unset;
           text-decoration: none;
         }
@@ -416,11 +366,15 @@ p{
 }
 
 .row {
-  position: relative;
   margin-top: 25px;
   &.title{
     #feature &{
-      margin-top: 72px;
+      margin-top: 0;
+      padding-top: 72px;
+    }
+    #team &{
+      margin-top: 0;
+      padding-top: 94px;
     }
     margin-top: 94px;
   }
@@ -442,7 +396,6 @@ p{
     #contact &{
       margin-top: 68px;
     }
-
   }
   .container-fluid & {
     #works &{
@@ -458,23 +411,16 @@ p{
   .container-fluid{
     margin-top: 80px;
     padding:0;
-      }
-
-  .bvcv:hover .envelope::after{
-    content: url('../../img/icon/Envelope_active.png');
   }
   h4.location{
-    font-family: "Open Sans" , serif;
     color: $color-primary
   }
   h3.location{
-    font-family: "Open Sans" , serif;
     color: $color-primary;
     margin-bottom:32px;
   }
   h6.location {
     margin-top: 40px;
-    font-family: "Open Sans", serif;
     color: rgba(6, 32, 51,0.6);
     line-height: 20pt;
   }
@@ -482,40 +428,6 @@ p{
     margin-top: 20px;
   }
 
-  .contact-text{
-    margin:45px auto;
-  }
-
-  .mail-message-area{
-    width:100%;
-    padding:0 15px;
-  }
-
-  .mail-message{
-    width: 100%;
-    background:rgba(255,255,255, 0.8) !important;
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    transition: all 0.7s;
-    margin:0 auto;
-    border-radius: 0;
-  }
-
-  .not-visible-message{
-    height:0px;
-    opacity: 0;
-  }
-
-  .visible-message{
-    height:auto;
-    opacity: 1;
-    margin:25px auto 0;
-  }
-  //.form-margin{
-  //  @media (min-width: 991px){
-  //    margin-left:-35px;
-  //  }
-  //}
 
   /* Input Styles */
   form{
@@ -535,16 +447,14 @@ p{
       }
     }
   }
-
-
   .form{
     width: 100%;
     padding: 15px;
-    background:white;
+    background:#fff;
     border:none;
     border-bottom: 1px solid #cccccc;
     margin-bottom:25px;
-    color:#727272 !important;
+    color:#727272;
     font-size:13px;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -556,7 +466,7 @@ p{
   }
 
   .form:focus{
-    color: white;
+    color: #fff;
     outline: none;
     border-bottom:1px solid #8BC3A3;
   }
@@ -569,14 +479,13 @@ p{
     height: auto;
     padding:15px;
     color: $color-primary;
-    background:white;
+    background:#fff;
     border:none;
     border-radius:3px;
     outline: none;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;;
-    margin: auto;
     margin-top:-5px;
     span{
       padding-right: 15px;
@@ -589,22 +498,15 @@ p{
 
   .form-btn:hover{
     background: $color-feature;
-    color: white;
+    color: #fff;
     border:none;
     span{
-      color: white;
+      color: #fff;
     }
   }
 
   .form-btn:active{
     opacity: 0.9;
-  }
-  center{
-    margin-top:330px;
-  }
-  input {
-    position: relative;
-    z-index: 10;
   }
   .responsive-margin{
     @media only screen and (max-width: 980px) {
@@ -632,44 +534,9 @@ p{
     text-decoration: none;
     text-align: center;
     transition: background .5s ease .300ms;
-    span {
-      width: 100px;
-      float: left;
-      text-align: center;
-      background: $color-feature;
-      color: #fff;
-      margin: -25px 74px;
-      padding: 8px;
-      transform-origin: 0;
-      visibility: hidden;
-      opacity: 0;
-      transform: rotateY(45deg);
-      border-radius: 5px;
-      transition: all .5s ease .300ms
-    }
 
   }
-  @media only screen and (min-width: 1441px) {
-    .social li a:hover span {
-      visibility: visible;
-      opacity: 1;
-      transform: rotateY(0)
-    }
-  }
-  .social li span:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: -20px;
-    top: 7px;
-    border: 10px solid transparent;
-    border-right: 10px solid $color-feature;
-  }
   .social li a:hover { color: $color-feature }
-  .social li:first-child a { border-radius: 0 5px 0 0 }
-  .social li:last-child  a { border-radius: 0 0 5px 0 }
 }
 #fun{
   background: url('../img/funfact_bg.png')no-repeat bottom;
@@ -692,15 +559,10 @@ p{
     background-color: rgba(6,32,51,0.8);
     padding-bottom: 155px;
   }
-  //.row{
-  //  margin-right: 0;
-  //  margin-left: 0;
-  //}
   .text-center{
-    color: rgb(255,255,255);
+    color: #fff;
     h1{
       margin-top: 33px;
-      font-family: "Open Sans";
       font-weight: 600;
       @media (min-width: 1048px ){
         font-size: 60px;
@@ -708,7 +570,6 @@ p{
     }
     h4{
       margin-top: 3px;
-      font-family: "Open Sans";
       text-transform: uppercase;
     }
   }
@@ -740,13 +601,12 @@ p{
 
 .btn-test{
   background-color: $color-feature;
-  color: white;
+  color: #fff;
 }
 .fa-heart-o{
   font-weight: bold;
 }
 .no-paddingright{
-
   @media (min-width: 767px){
     padding-right: 0;
   }
