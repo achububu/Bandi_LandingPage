@@ -746,9 +746,16 @@ p{
   font-weight: bold;
 }
 .no-paddingright{
-  padding-right: 0;
-}
 
+  @media (min-width: 767px){
+    padding-right: 0;
+  }
+}
+.no-paddingresponsive{
+  @media (min-width: 767px){
+    padding:0 !important;
+  }
+}
 
 
 

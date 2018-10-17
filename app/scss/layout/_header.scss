@@ -79,9 +79,9 @@ nav {
   }
   .active {
     border-top: 1px solid #32b0ee;
-    //@media (max-width: 767px){
-    //  border-bottom: 1px solid #32b0ee;
-    //}
+    @media (max-width: 767px){
+      border-bottom: 1px solid #32b0ee;
+    }
   }
 }
 .slick-slider.slick-dotted{

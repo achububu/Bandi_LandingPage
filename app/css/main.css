@@ -4382,6 +4382,9 @@ nav {
 
 #navbarmenu .active {
   border-top: 1px solid #32b0ee; }
+  @media (max-width: 767px) {
+    #navbarmenu .active {
+      border-bottom: 1px solid #32b0ee; } }
 
 .slick-slider.slick-dotted {
   margin-bottom: 0 !important; }
@@ -6274,8 +6277,13 @@ p.content {
 .fa-heart-o {
   font-weight: bold; }
 
-.no-paddingright {
-  padding-right: 0; }
+@media (min-width: 767px) {
+  .no-paddingright {
+    padding-right: 0; } }
+
+@media (min-width: 767px) {
+  .no-paddingresponsive {
+    padding: 0 !important; } }
 
 /* -------------------------------------------------------------
   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
