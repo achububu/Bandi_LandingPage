@@ -511,11 +511,11 @@ p{
     opacity: 1;
     margin:25px auto 0;
   }
-  .form-margin{
-    @media (min-width: 991px){
-      margin-left:-35px;
-    }
-  }
+  //.form-margin{
+  //  @media (min-width: 991px){
+  //    margin-left:-35px;
+  //  }
+  //}
 
   /* Input Styles */
   form{
@@ -741,7 +741,9 @@ p{
 .fa-heart-o{
   font-weight: bold;
 }
-
+.no-paddingright{
+  padding-right: 0;
+}
 
 
 

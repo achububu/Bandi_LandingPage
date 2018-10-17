@@ -167,10 +167,11 @@ nav {
           @include center-test(71%)
         }
         @media (max-width: 766px){
-          @include center-test(63%);
+          @include center-test(60%);
           font-size: 20px;
         }
         @media (max-width: 450px){
+          @include center-test(63%);
           font-size: 25px;
         }
         @media (max-width: 355px){
@@ -184,11 +185,11 @@ nav {
         //font-size:calc(5px + 1.2vw);
           font-size: 1.125em;
         @media (max-width: 1024px){
-          @include center-test(79%);
+          @include center-test(81%);
         }
         @media (max-width: 766px){
           font-size: 13px;
-          @include center-test(73%);
+          @include center-test(68%);
         }
           @media (max-width: 450px){
             @include center-test(76%);

@@ -4485,12 +4485,19 @@ nav {
         text-align: center;
         z-index: 11;
         position: absolute;
-        top: 63%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 20px; } }
     @media (max-width: 450px) {
       .slick-container .slide-text h2.home-text2 {
+        display: block;
+        text-align: center;
+        z-index: 11;
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         font-size: 25px; } }
     @media (max-width: 355px) {
       .slick-container .slide-text h2.home-text2 {
@@ -4512,7 +4519,7 @@ nav {
           text-align: center;
           z-index: 11;
           position: absolute;
-          top: 79%;
+          top: 81%;
           left: 50%;
           transform: translate(-50%, -50%); } }
       @media (max-width: 766px) {
@@ -4522,7 +4529,7 @@ nav {
           text-align: center;
           z-index: 11;
           position: absolute;
-          top: 73%;
+          top: 68%;
           left: 50%;
           transform: translate(-50%, -50%); } }
       @media (max-width: 450px) {
@@ -6095,9 +6102,6 @@ p.content {
     height: auto;
     opacity: 1;
     margin: 25px auto 0; }
-  @media (min-width: 991px) {
-    #contact .form-margin {
-      margin-left: -35px; } }
   @media only screen and (min-width: 995px) {
     #contact form .form-name {
       padding-left: 0; } }
@@ -6272,6 +6276,9 @@ p.content {
 
 .fa-heart-o {
   font-weight: bold; }
+
+.no-paddingright {
+  padding-right: 0; }
 
 /* -------------------------------------------------------------
   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
