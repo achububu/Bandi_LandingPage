@@ -104,7 +104,7 @@ nav {
     //transform: translateX(-50%);
     width: auto;
     height: fit-content;
-    top: 51.2%;
+    top: 51%;
     @include css3-prefix('transform', 'translate(-50%, -50%)');
     li {
       display: block;
