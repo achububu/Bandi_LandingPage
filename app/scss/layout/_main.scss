@@ -1,3 +1,5 @@
+// todo cai nay co import ben file main.scss roi, import lam chi nua la???
+
 @import "../helpers/variables";
 @import "../helpers/mixins";
 
@@ -92,14 +94,19 @@
 
 
 #works {
+  // todo khong hieu sao cai block nay position ralative luon???
+  // nguyen style position, padding, bg white, color, list style, margin, display block, overflow, width 100%??? khong hieu muc dich lam gi het
   position: relative;
   padding: 0;
+  // todo ko duoc ghi style mau la may cai chu white, black blue... ke ca la may mau common white black
+  // hoac la phai #000, #fff hoac la khai bao bien variable $white: #fff
   background-color: white;
   color: $color-feature;
   list-style-type: none;
   margin: 0;
   min-height: 300px;
   width: 100%;
+  // todo PHAI LUON HAN CHE DUNG IMPORTANT tru khi minh bat buoc phai de layout/style cua plugin
   display: block !important;
   overflow: hidden;
   .fa-stack{
@@ -107,12 +114,14 @@
     border-radius: 50%;
     box-sizing: content-box;
   }
+  // todo cam giac doan style nay khong can dung toi luon, xoa het layout van nhu bt???
   .icon-test{
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .btn{
+    // todo sao font family o day bi lap lai qua vay? font chi khai bao 1 lan tru nhung font dat biet o title chang han thoi
     font-family:  "Open Sans";
     font-weight: 700;
     border:none;
@@ -169,6 +178,7 @@ h1 {
   &.content {
       color: $color-primary;
       font-size: 20px;
+    // todo sao font family o day bi lap lai qua vay? font chi khai bao 1 lan tru nhung font dat biet o title chang han thoi
       font-family: "Open Sans", serif;
       text-align: left;
       font-weight: 600;
