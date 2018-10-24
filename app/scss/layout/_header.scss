@@ -104,7 +104,7 @@ nav {
     //transform: translateX(-50%);
     width: auto;
     height: fit-content;
-    top: 50.8%;
+    top: 50.6%;
     @include css3-prefix('transform', 'translate(-50%, -50%)');
     li {
       display: block;
@@ -193,9 +193,32 @@ nav {
           @media (max-width: 355px){
             font-size: 11px;
           }
+        }
       }
-    }
+      &.no-background {
+        position: relative;
+        overflow: hidden;
 
+        span {
+          display: inline-block;
+          vertical-align: baseline;
+          zoom: 1;
+          *display: inline;
+          *vertical-align: auto;
+          position: relative;
+          padding: 0 33px;
+          &:before, &:after {
+            content: '';
+            display: block;
+            width: 9.2%;
+            position: absolute;
+            top: 53%;
+            border-top: 2px solid $color-header;
+          }
+          &:before { right: 100% ;}
+          &:after { left: 100%; }
+        }
+      }
 
     }
   }
@@ -213,7 +236,7 @@ nav {
       display: inline;
       a {
         outline:0;
-        padding: 5px;
+        padding: 6px;
         &:link {
           color: rgba(255,255,255,0.5);
         }
@@ -238,9 +261,9 @@ nav {
 
 .navbar-dark{
   @media (max-width:768px) {
-    background-color: rgba(10,31,35, 1);
+    background-color: rgba(10,31,35, 0.6);
   }
-  background-color: rgba(10,31,35, 1);
+  background-color: rgba(10,31,35, 0.6);
   border: 0;
   font-size: 16px;
 }
@@ -253,29 +276,3 @@ nav {
   transform: rotate(-45deg);
 }
 
-h2.no-background {
-  position: relative;
-  overflow: hidden;
-
-  span {
-    display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto;
-    position: relative;
-    padding: 0 35px;
-
-    &:before, &:after {
-      content: '';
-      display: block;
-      width: 9.2%;
-      position: absolute;
-      top: 53%;
-      border-top: 2px solid $color-header;
-    }
-
-    &:before { right: 100% ;}
-    &:after { left: 100%; }
-  }
-}

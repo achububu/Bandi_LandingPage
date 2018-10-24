@@ -12,6 +12,9 @@
       left: 51%;
       margin-top: 56px;
       margin-bottom: 35px;
+      #feature &{
+        margin-bottom: 30px;
+      }
       @media only screen and (max-width: 991px) {
           left: 51%;
           margin-top: 0;
@@ -53,12 +56,22 @@
     border: 1px solid $color-feature;
     border-radius: 50%;
     box-sizing: content-box;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .icon-test{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    line-height: 0;
+    //width: 100%;
+    height: inherit;
   }
   .slick-container {
     .slick-item {
       outline:0;
       div{
-        &.col-md-10,&.col-md-2{
+        &.col-md-3,&.col-md-9,&.col-md-4{
           padding:0;
         }
         &.col-md-2{
@@ -134,8 +147,8 @@
     background: rgba(0,0,0,0.35);
   }
   ul.slick-dots{
-    margin-top: 68px;
-    margin-bottom: 28px;
+    margin-top: 65px;
+    margin-bottom: 30px;
   }
 }
 
@@ -241,10 +254,11 @@ p{
         }
       }
     }
-    #works &, #contact &{
+    #works &,#contact &{
       margin-top: -5px;
       margin-bottom:5px;
      }
+
   }
 }
 
@@ -388,6 +402,9 @@ p{
       margin-top: 0;
       padding-top: 94px;
     }
+    #fun &{
+      margin-top: 94px;
+    }
     margin-top: 94px;
   }
   &.heart{
@@ -398,10 +415,11 @@ p{
   }
   &.highlight{
     margin-top:30px;
+    #fun &{
+      margin-top:20px;
+    }
   }
-  #fun &{
-    margin-top:20px;
-  }
+
   &.content {
     margin-top: 52px;
     #feature &{
@@ -414,7 +432,7 @@ p{
       margin-top: 40px
     }
     #contact &{
-      margin-top: 70px;
+      margin-top: 73px;
     }
   }
   .container-fluid & {
@@ -446,6 +464,9 @@ p{
   }
   .contact-form{
     margin-top: 20px;
+  }
+  .form-margin{
+    margin-top: -4px;
   }
 
 
