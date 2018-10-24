@@ -3863,6 +3863,7 @@ p.content {
     margin-top: 90px;
     padding: 0; }
   #contact h4.location {
+    font-size: 22px;
     color: #062033; }
   #contact h3.location {
     color: #062033;
@@ -3873,8 +3874,12 @@ p.content {
     line-height: 20pt; }
   #contact .contact-form {
     margin-top: 20px; }
-  #contact .form-margin {
-    margin-top: -4px; }
+  @media (min-width: 1024px) {
+    #contact div.social {
+      right: 15px; } }
+  @media (min-width: 1024px) {
+    #contact div.form-margin {
+      margin-top: -2px; } }
   @media only screen and (min-width: 995px) {
     #contact form .form-name {
       padding-left: 0; } }
@@ -3902,6 +3907,10 @@ p.content {
     color: #fff;
     outline: none;
     border-bottom: 1px solid #8BC3A3; }
+  @media (min-width: 1024px) {
+    #contact div.pl-20 {
+      position: relative;
+      left: 40px; } }
   #contact .form-btn {
     width: 180px;
     display: block;
@@ -3915,19 +3924,21 @@ p.content {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    margin-top: -5px; }
-    #contact .form-btn span {
+    margin-top: -5px;
+    float: right; }
+    #contact .form-btn img {
       padding-right: 15px;
       color: #0eb493; }
-    @media only screen and (min-width: 980px) {
+    @media (max-width: 992px) {
       #contact .form-btn {
-        float: right; } }
+        float: unset;
+        margin: 0 auto; } }
   #contact .form-btn:hover {
     background: #0eb493;
     color: #fff;
     border: none; }
-    #contact .form-btn:hover span {
-      color: #fff; }
+    #contact .form-btn:hover img {
+      content: url("../../img/icon/Envelope_active.png"); }
   #contact .form-btn:active {
     opacity: 0.9; }
   @media only screen and (max-width: 980px) {
@@ -3951,7 +3962,10 @@ p.content {
     text-align: center;
     transition: background .5s ease .300ms; }
   #contact .social li a:hover {
-    color: #0eb493; }
+    opacity: 0.5 !important;
+    filter: alpha(opacity=70) !important;
+    /* For IE8 and earlier */
+    box-shadow: 0 0 0px #000000 !important; }
 
 #fun {
   background: url("../img/funfact_bg.png") no-repeat bottom;
@@ -3987,7 +4001,7 @@ p.content {
 .no-padding {
   padding: 0 !important; }
   #contact .no-padding {
-    padding: 0 15px 0 0 !important; }
+    padding: 0 30px 0 0 !important; }
 
 @media (min-width: 980px) {
   .no-paddingleft {

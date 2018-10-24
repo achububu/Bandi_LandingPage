@@ -462,6 +462,7 @@ p{
     padding:0;
   }
   h4.location{
+    font-size:22px;
     color: $color-primary
   }
   h3.location{
@@ -476,8 +477,15 @@ p{
   .contact-form{
     margin-top: 20px;
   }
-  .form-margin{
-    margin-top: -4px;
+  div.social{
+    @media (min-width: 1024px){
+      right: 15px;
+    }
+  }
+  div.form-margin{
+    @media (min-width: 1024px){
+      margin-top:-2px;
+    }
   }
 
 
@@ -522,6 +530,12 @@ p{
     outline: none;
     border-bottom:1px solid #8BC3A3;
   }
+  div.pl-20{
+    @media (min-width: 1024px) {
+      position:relative;
+      left: 40px;
+    }
+  }
 
   /* Send Button Styles */
 
@@ -539,12 +553,14 @@ p{
     -moz-transition: all 0.3s;
     transition: all 0.3s;;
     margin-top:-5px;
-    span{
+    img{
       padding-right: 15px;
       color: $color-feature;
     }
-    @media only screen and (min-width: 980px) {
       float: right;
+    @media (max-width: 992px){
+      float: unset;
+      margin: 0 auto;
     }
   }
 
@@ -552,8 +568,8 @@ p{
     background: $color-feature;
     color: #fff;
     border:none;
-    span{
-      color: #fff;
+    img{
+      content: url("../../img/icon/Envelope_active.png");
     }
   }
 
@@ -588,7 +604,11 @@ p{
     transition: background .5s ease .300ms;
 
   }
-  .social li a:hover { color: $color-feature }
+  .social li a:hover {
+    //background-color: #C37500;
+    opacity:0.5 !important;
+    filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+    box-shadow: 0 0 0px #000000 !important; }
 }
 #fun{
   background: url('../img/funfact_bg.png')no-repeat bottom;
@@ -632,7 +652,7 @@ p{
 .no-padding{
   padding: 0 !important;
   #contact &{
-    padding: 0 15px 0 0 !important;
+    padding: 0 30px 0 0 !important;
   }
 }
 .no-paddingleft{
