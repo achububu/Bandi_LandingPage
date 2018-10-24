@@ -72,12 +72,13 @@
       outline:0;
       div{
         &.col-md-3,&.col-md-9,&.col-md-4{
-          padding:0;
+          @media (min-width: 1024px ){
+            padding:0;
+          }
         }
-        &.col-md-2{
-          //text-align: left;
-          @media (min-width: 991px){
-            text-align: left;
+        &.col-md-9{
+          @media (min-width: 1024px ){
+            right:15px;
           }
         }
       }
@@ -118,6 +119,7 @@
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    font-size: 14px;
     &:hover{
       background-color: $color-feature;
       color: #fff;
@@ -174,8 +176,8 @@ h1 {
   }
   &.content-name{
     color: $color-primary;
-    font-size: 16pt;
-    padding-top: 16px;
+    font-size: 18px;
+    padding-top: 18px;
     font-weight: 600;
   }
 }
@@ -314,14 +316,19 @@ p{
   }
 }
 #team .overlay .overlay-text{
-  height: inherit;
+  //position:relative;
+  //left:5%;
   color: #fff;
   opacity: 1;
-  font-size: 20pt;
-  width: inherit;
+  width: 100%;
+  height: inherit;
   text-align: center;
   h4{
     margin-top:25px ;
+    font-size: 16px;
+    @media only screen and (max-width: 991px) {
+      font-size: 18px;
+    }
     @media only screen and (max-width: 490px) {
       font-size: 15px;
     }
@@ -338,17 +345,21 @@ p{
   }
   .social{
     @include center-test(85%);
-    font-size:calc(10px + 0.9vw);
+    font-size:24px;
     list-style-type: none;
-    font-weight: 300;
     width: 90%;
+
+    @media (max-width: 600px){
+      font-size:calc(10px + 0.9vw);
+    }
     li{
       display: inline;
-
       a {
         outline:0;
-        padding:0;
-        margin:0;
+        @media (min-width: 600px){
+          width:42px;
+          line-height: 42px;
+        }
         &:link {
           color: #fff;
         }

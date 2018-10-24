@@ -18,10 +18,14 @@ footer {
   }
   h6 {
     color: #fff;
+    @media (min-width: 1024px){
+      font-size: 13px;
+      line-height: 18pt;
+    }
     &.description {
       margin-top: 36px;
       font-weight: 300;
-      line-height: 18pt;
+
     }
 
     &.description1 {
@@ -31,14 +35,12 @@ footer {
       @media (max-width: 990px){
         margin-top: 40px;
       }
-      line-height: 18pt;
     }
     &.sub{
       margin-top: 62px;
       font-weight: 500;
       border-left: 1px solid #177e72;
       padding-left: 15px;
-      line-height: 18pt;
 
       span{
         padding-left: 5px;
